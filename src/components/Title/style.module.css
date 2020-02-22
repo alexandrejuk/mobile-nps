@@ -1,0 +1,28 @@
+@import '../../assets/css/colors.css';
+
+.title {
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+}
+
+.medium {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.small {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.large {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.primary {
+  color: var(--color-ship-gray);
+}
+
+.bold {
+  font-weight: bold;
+}
