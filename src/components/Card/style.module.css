@@ -1,0 +1,30 @@
+@import '../../assets/css/colors.css';
+
+.card {
+  background: var(--color-white);
+  border-radius: 3px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
+  height: 228px;
+  padding: 20px;
+  text-align: center;
+  width: 166px;
+}
+
+.imageContainer {
+  height: 164px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.imageContainer img {
+  height: 100%;
+}
+
+.title {
+  border-top: 1px solid var(--color-concrete);
+  color: var(--color-ship-gray);
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 14px;
+  padding: 10px 0;
+}
