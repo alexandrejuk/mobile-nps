@@ -23,5 +23,21 @@ module.exports = {
     'react',
   ],
   rules: {
+    "max-len": [
+      "error",
+      { "code": 80 }
+    ],
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    semi: [2, 'never'],
   },
 };
