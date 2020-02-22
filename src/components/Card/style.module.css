@@ -22,9 +22,5 @@
 
 .title {
   border-top: 1px solid var(--color-concrete);
-  color: var(--color-ship-gray);
-  font-family: 'Rubik', Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 14px;
   padding: 10px 0;
 }

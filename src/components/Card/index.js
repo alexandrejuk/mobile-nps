@@ -1,6 +1,6 @@
-/* eslint-disable */
 import React from 'react'
 import PropTypes from 'prop-types'
+import Title from '../Title'
 
 import styles from './style.module.css'
 
@@ -17,7 +17,7 @@ const Card = ({
       <img src={image} alt="item card" />
     </div>
     <div className={styles.title}>
-      {title}
+      <Title text={title} />
     </div>
    </div>
 )
