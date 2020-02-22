@@ -1,0 +1,42 @@
+@import '../../assets/css/colors.css';
+
+.bgModal {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  box-sizing: border-box;
+  color: var(--color-ship-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.5s ease-out;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.modal {
+  background-color: var(--color-white);
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px;
+  max-width: 768px;
+  padding: 20px;
+  transform: translateY(-840px);
+  transition: transform 0.5s ease 0s;
+  width: 100%;
+}
+
+.show {
+  transform: translateY(0);
+}
+
+.bgModal.show {
+  opacity: 1;
+  visibility: visible;
+}
