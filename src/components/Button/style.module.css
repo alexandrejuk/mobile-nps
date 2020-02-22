@@ -1,0 +1,41 @@
+@import '../../assets/css/colors.css';
+
+.button {
+  background-color: var(--color-california);
+  border-radius: 3px;
+  border: 1px solid var(--color-california);
+  box-sizing: border-box;
+  color: var(--color-white);
+  cursor: pointer;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+  padding: 8px 24px;
+  width: 100%;
+}
+
+.button:active,
+.button:focus {
+  outline: none;
+}
+
+.button:active {
+  opacity: 0.8;
+}
+
+.outline {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-california);
+  color: var(--color-california);
+}
+
+.button.outline:hover {
+  background-color: var(--color-california);
+  color: var(--color-white);
+}
+
+.button.outline:active {
+  opacity: 0.8;
+}
