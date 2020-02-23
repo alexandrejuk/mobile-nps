@@ -10,8 +10,11 @@ const Card = ({
   title,
 }) => (
   <div
+    onKeyPress={action}
     onClick={action}
     className={styles.card}
+    tabIndex="0"
+    role="button"
   >
     <div className={styles.imageContainer}>
       <img src={image} alt="item card" />
