@@ -10,6 +10,11 @@
   width: 166px;
 }
 
+.card:active,
+.card:focus {
+  outline: none;
+}
+
 .imageContainer {
   height: 164px;
   overflow: hidden;
