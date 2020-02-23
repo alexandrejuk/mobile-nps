@@ -5,7 +5,7 @@ import React, {
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-import arrowIcon from '../../assets/icons/arrow_up.svg'
+import arrowIcon from '../../assets/icons/arrow-up.svg'
 import Title from '../Title'
 import styles from './style.module.css'
 
