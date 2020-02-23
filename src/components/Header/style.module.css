@@ -1,0 +1,17 @@
+@import '../../assets/css/colors.css';
+
+.header {
+  align-items: center;
+  display:flex;
+  background-color: var(--color-white);
+  border-bottom: solid 1px var( --color-alto);
+  box-sizing: border-box;
+  height: 60px;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.logo {
+  margin: auto;
+  width: 77px;
+}
