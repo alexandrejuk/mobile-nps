@@ -11563,6 +11563,11 @@ ramda@^0.21.0:
   resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.21.0.tgz#a001abedb3ff61077d4ff1d577d44de77e8d0a35"
   integrity sha1-oAGr7bP/YQd9T/HVd9RN536NCjU=
 
+ramda@^0.27.0:
+  version "0.27.0"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.27.0.tgz#915dc29865c0800bf3f69b8fd6c279898b59de43"
+  integrity sha512-pVzZdDpWwWqEVVLshWUHjNwuVP7SfcmPraYuqocJp1yo2U1R7P+5QAfDhdItkuoGqIBnBYrtPp7rEPqDn9HlZA==
+
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/randombytes/-/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"
@@ -11907,7 +11912,7 @@ react-textarea-autosize@^7.1.0:
     "@babel/runtime" "^7.1.2"
     prop-types "^15.6.0"
 
-react-vanilla-form@^0.8.0:
+react-vanilla-form@0.8.0:
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/react-vanilla-form/-/react-vanilla-form-0.8.0.tgz#ea300bd1c20843054cec4bf4de18957d51e973bc"
   integrity sha512-mUGGzzVwSdkqV2peSiNi/2dIIhvZS19mVWcOYbxW5bDY8ZRCIHXQ6RiQSx953SRQ6SR8kTlyCT91RWeXjDHICg==
