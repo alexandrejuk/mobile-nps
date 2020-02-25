@@ -7,14 +7,16 @@ import styles from './style.module.css'
 const Title = ({
   color,
   size,
-  type,
   text,
+  textAlign,
+  type,
 }) => (
   <h1
     className={classNames(
-      styles.title,
       styles[color],
       styles[size],
+      styles[textAlign],
+      styles.title,
       styles[type],
     )}
   >
@@ -23,6 +25,11 @@ const Title = ({
 )
 
 Title.propTypes = {
+  textAlign: PropTypes.PropTypes.oneOf([
+    'center',
+    'left',
+    'right',
+  ]),
   color: PropTypes.PropTypes.oneOf([
     'primary',
   ]),
@@ -39,6 +46,7 @@ Title.propTypes = {
 }
 
 Title.defaultProps = {
+  textAlign: 'left',
   color: 'primary',
   size: 'medium',
   type: 'normal',
