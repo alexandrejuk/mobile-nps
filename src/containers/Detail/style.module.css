@@ -60,9 +60,9 @@
 
 .revenuesAvatar {
   border-radius: 3px;
-  height: 74px;
+  height: 82px;
   overflow: hidden;
-  width: 74px;
+  width: 82px;
 }
 
 .revenuesAvatar img {
@@ -76,7 +76,7 @@
   justify-content: space-between;
 }
 
-.revenueItem:not(:last-child) {
+.revenueItem {
   flex: 1;
   margin-bottom: 20px;
 }
