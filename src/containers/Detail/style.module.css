@@ -1,0 +1,48 @@
+@import '../../assets/css/colors.css';
+
+.container {
+  background-color: var(--color-concrete);
+}
+
+.product {
+  background-color: var(--color-white);
+  border-radius: 3px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+.productImage {
+  height: 229px;
+  margin: auto;
+  width: 215px;
+}
+
+.productImage img {
+  height: 100%;
+}
+
+.productContent {
+  padding-top: 30px;
+}
+
+.productInfo {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productInfoSection {
+  flex: 1;
+}
+
+.productRevenue {
+  padding: 20px;
+}
+
+.productIssueTitle {
+  padding: 20px;
+}
+
+.issueSection {
+  padding: 10px 0;
+}
