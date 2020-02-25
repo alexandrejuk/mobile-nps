@@ -1,0 +1,28 @@
+@import '../../assets/css/colors.css';
+
+.container {
+  background-color: var(--color-concrete);
+  min-height: calc(100vh - 40px);
+  padding: 20px;
+}
+
+.logo {
+  margin: auto;
+  height: 86px;
+  width: 180px;
+  padding: 30px 0;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.form {
+  padding: 40px 0;
+  margin: auto;
+  max-width: 320px;
+}
+
+.buttonForm {
+  padding: 20px 0;
+}
