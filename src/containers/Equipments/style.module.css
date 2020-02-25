@@ -1,0 +1,39 @@
+@import '../../assets/css/colors.css';
+
+.container {
+  background-color: var(--color-concrete);
+  padding: 10px;
+}
+
+.logo {
+  margin: auto;
+  height: 86px;
+  width: 180px;
+  padding-bottom: 30px;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.equipmentItem {
+  margin: 3px;
+}
+
+.equipments {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 360px) {
+  .equipmentItem {
+    margin-bottom: 5px;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .equipments {
+    justify-content: center;
+  }
+}
