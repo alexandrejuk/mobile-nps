@@ -2,12 +2,14 @@
 
 .collapse {
   background-color: var(--color-white);
-  border: solid 1px var( --color-alto);
+  border-top: solid 1px var( --color-alto);
+  border-bottom: solid 1px var( --color-alto);
   border-radius: 3px;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
   position: relative;
   overflow: hidden;
   transition: height 0.4s ease-in-out;
+  margin-bottom: 20px;
 }
 
 .collapseHeader {
