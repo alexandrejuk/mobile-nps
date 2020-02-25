@@ -6,6 +6,7 @@ import { Card } from '../../components'
 import styles from './style.module.css'
 
 const Equipments = ({
+  action,
   equipments,
 }) => {
   return (
@@ -15,7 +16,6 @@ const Equipments = ({
       </div>
       <div className={styles.equipments}>
         {equipments.map(({
-          action,
           id,
           image,
           title,
@@ -25,7 +25,7 @@ const Equipments = ({
             className={styles.equipmentItem}
           >
             <Card
-              action={action}
+              action={() => action(id)}
               image={image}
               title={title}
             />
@@ -37,7 +37,7 @@ const Equipments = ({
 }
 
 Equipments.propTypes = {
-  goBack: PropTypes.func.isRequired,
+  action: PropTypes.func.isRequired,
   equipments: PropTypes.shape({
     action: PropTypes.func.isRequired,
     id: PropTypes.number.isRequired,
