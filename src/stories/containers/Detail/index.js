@@ -6,7 +6,7 @@ export default {
   title: 'Containers/Detail',
 }
 
-const product =   {
+const product = {
   description: 'Maquina de café premium, criada com o mais alto padrão de qualidade, lider de venda em mais de 2.000 mil países.',
   deep: 2400,
   id: 3,
