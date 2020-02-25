@@ -20,7 +20,10 @@ const Card = ({
       <img src={image} alt="item card" />
     </div>
     <div className={styles.title}>
-      <Title text={title} />
+      <Title
+        text={title}
+        textAlign="center"
+      />
     </div>
    </div>
 )
