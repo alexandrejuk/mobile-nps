@@ -27,6 +27,18 @@ const product =   {
   ],
   name: 'A6/30',
   height: 100,
+  revenues: [
+    {
+      src: 'https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9',
+      title: 'AL',
+      description: 'Receita blabla',
+    },
+    {
+      src: 'https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9',
+      title: 'P',
+      description: 'Receita blabla',
+    },
+  ],
   voltage: '220v~/110v~',
   width: 330,
   weight: 1.2,
