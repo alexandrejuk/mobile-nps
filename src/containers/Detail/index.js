@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { map, path } from 'ramda'
+import { map, prop } from 'ramda'
 
 import {
   Collapse,
@@ -45,81 +45,70 @@ const issue = ({
 const Detail = ({
   product,
   goBack,
-}) => {
-  const deep = path(['deep'], product)
-  const height = path(['height'], product)
-  const image = path(['image'], product)
-  const issues = path(['issues'], product)
-  const name = path(['name'], product)
-  const voltage = path(['voltage'], product)
-  const weight = path(['weight'], product)
-  const width = path(['width'], product)
-
-  return (
-    <div className={styles.container}>
-      <Header
-        action={goBack}
+}) => (
+  <div className={styles.container}>
+    <Header
+      action={goBack}
+    />
+    <div className={styles.product}>
+      <Title
+        size="medium"
+        text={prop('name', product)}
+        textAlign="right"
       />
-      <div className={styles.product}>
+      <div className={styles.productImage}>
+        <img src={prop('image', product)} alt="product" />
+      </div>
+      <div className={styles.productContent}>
         <Title
           size="medium"
-          text={name}
-          textAlign="right"
+          text="Descrição"
         />
-        <div className={styles.productImage}>
-          <img src={image} alt="product" />
-        </div>
-        <div className={styles.productContent}>
-          <Title
-            size="medium"
-            text="Descrição"
-          />
-          <div className={styles.productInfo}>
-            <div className={styles.productInfoSection}>
-              <Title
-                color="primary"
-                size="small"
-                text="Tensão"
-              />
-              <Title
-                color="primary"
-                size="small"
-                text={voltage}
-              />
-            </div>
-            <div className={styles.productInfoSection}>
-              <Title
-                color="primary"
-                size="small"
-                text="Dimensões"
-              />
-              <Title
-                color="primary"
-                size="small"
-                text={`AL: ${height} cm x L: ${width} cm x P: ${deep} cm - Peso: ${weight} kg`}
-              />
-            </div>
+        <div className={styles.productInfo}>
+          <div className={styles.productInfoSection}>
+            <Title
+              color="primary"
+              size="small"
+              text="Tensão"
+            />
+            <Title
+              color="primary"
+              size="small"
+              text={prop('voltage', product)}
+            />
+          </div>
+          <div className={styles.productInfoSection}>
+            <Title
+              color="primary"
+              size="small"
+              text="Dimensões"
+            />
+            <Title
+              color="primary"
+              size="small"
+              text={`AL: ${prop('height', product)} cm x L: ${prop('width', product)} cm x P: ${prop('deep', product)} cm - Peso: ${prop('weight', product)} kg`}
+            />
           </div>
         </div>
       </div>
-      <div className={styles.productRevenue}>
+    </div>
+    <div className={styles.productRevenue}>
+      <Title
+        size="medium"
+        text="Receitas"
+      />
+    </div>
+    <div className={styles.productIssue}>
+      <div className={styles.productIssueTitle}>
         <Title
           size="medium"
-          text="Receitas"
+          text="Erros"
         />
       </div>
-      <div className={styles.productIssue}>
-        <div className={styles.productIssueTitle}>
-          <Title
-            size="medium"
-            text="Erros"
-          />
-        </div>
-        {map(issue, issues)}
-      </div>
+      {map(issue, prop('issues', product))}
     </div>
-  )
-}
+  </div>
+)
 
 Detail.propTypes = {
   goBack: PropTypes.func.isRequired,

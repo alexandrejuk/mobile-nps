@@ -1,4 +1,5 @@
 import React from 'react'
+import { action } from '@storybook/addon-actions'
 import Detail from '../../../containers/Detail'
 
 export default {
@@ -33,6 +34,7 @@ const product =   {
 
 export const Default = () => (
   <Detail
+    goBack={action('go back!')}
     product={product}
   />
 )
