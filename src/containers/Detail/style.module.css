@@ -36,7 +36,7 @@
 }
 
 .productRevenue {
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .productIssueTitle {
@@ -56,4 +56,27 @@
 
 .productRevenueDocumet img {
   width: 100%;
+}
+
+.revenuesAvatar {
+  border-radius: 3px;
+  height: 74px;
+  overflow: hidden;
+  width: 74px;
+}
+
+.revenuesAvatar img {
+  height: 100%;
+}
+
+.revenueGallery {
+  align-items: center;
+  display: flex;;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.revenueItem:not(:last-child) {
+  flex: 1;
+  margin-bottom: 20px;
 }

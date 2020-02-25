@@ -29,11 +29,25 @@ const product =   {
   height: 100,
   revenues: [
     {
+      id: 1,
       src: 'https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9',
       title: 'AL',
       description: 'Receita blabla',
     },
     {
+      id: 2,
+      src: 'https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9',
+      title: 'P',
+      description: 'Receita blabla',
+    },
+    {
+      id: 3,
+      src: 'https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9',
+      title: 'P',
+      description: 'Receita blabla',
+    },
+    {
+      id: 4,
       src: 'https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9',
       title: 'P',
       description: 'Receita blabla',

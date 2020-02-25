@@ -53,6 +53,32 @@ const Detail = ({
   const revenues = prop('revenues', product)
   const images = map(image => (image.src), revenues)
 
+  const handleRevenue = (index) => {
+    setPhotoIndex(index)
+    setIsOpen(true)
+  }
+
+  const revenue = ({
+    id,
+    src,
+    title,
+  }, index) => (
+    <div
+      className={styles.revenueItem}
+      key={id}
+      onClick={() => handleRevenue(index)}
+    >
+      <Title
+        size="small"
+        text={`Cod: ${title}`}
+        type="bold"
+      />
+      <div className={styles.revenuesAvatar}>
+        <img src={src} alt="revenue gallery" />
+      </div>
+    </div>
+  )
+
   return (
     <div className={styles.container}>
       <Header
@@ -107,7 +133,9 @@ const Detail = ({
         />
       </div>
       <div className={styles.productRevenueDocumet}>
-        {map(item => <p key={item.title}>{item.title}</p>, revenues)}
+        <div className={styles.revenueGallery}>
+          {revenues.map(revenue)}
+        </div>
         {
           isOpen && (
             <Lightbox
