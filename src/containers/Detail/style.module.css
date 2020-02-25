@@ -46,3 +46,14 @@
 .issueSection {
   padding: 10px 0;
 }
+
+.productRevenueDocumet {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.productRevenueDocumet img {
+  width: 100%;
+}

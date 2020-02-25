@@ -8,6 +8,8 @@ import {
   Title,
 } from '../../components'
 
+import pdfTeste from '../../assets/images/revenue/pdf-teste.png'
+
 import styles from './style.module.css'
 
 const issue = ({
@@ -97,6 +99,9 @@ const Detail = ({
         size="medium"
         text="Receitas"
       />
+    </div>
+    <div className={styles.productRevenueDocumet}>
+      <img src={pdfTeste} alt="revenue" />
     </div>
     <div className={styles.productIssue}>
       <div className={styles.productIssueTitle}>
