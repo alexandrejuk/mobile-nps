@@ -45,7 +45,7 @@ const issue = ({
 )
 
 const Detail = ({
-  product,
+  product = {},
   goBack,
 }) => {
   const [isOpen, setIsOpen] = useState(false)
