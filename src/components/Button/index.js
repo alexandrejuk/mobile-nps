@@ -8,6 +8,7 @@ const Button = ({
   action,
   children,
   color,
+  type,
 }) => (
   <button
     onClick={action}
@@ -15,19 +16,25 @@ const Button = ({
       styles.button,
       styles[color],
     )}
-    type="button"
+    type={type}
   >
     {children}
   </button>
 )
 
 Button.propTypes = {
-  action: PropTypes.func.isRequired,
+  action: PropTypes.func,
   children: PropTypes.node.isRequired,
   color: PropTypes.oneOf([
     'outline',
     'primary',
   ]).isRequired,
+  type: PropTypes.string,
+}
+
+Button.defaultProps = {
+  action: null,
+  type: 'button',
 }
 
 export default Button
