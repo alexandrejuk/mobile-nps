@@ -3,6 +3,7 @@
 .container {
   background-color: var(--color-concrete);
   padding: 10px;
+  min-height: 100vh;
 }
 
 .logo {
