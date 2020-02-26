@@ -61,6 +61,6 @@ const product = {
 export const Default = () => (
   <Detail
     goBack={action('go back!')}
-    product={product}
+    product={product || {}}
   />
 )

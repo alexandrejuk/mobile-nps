@@ -41,6 +41,6 @@ const equipments = [
 
 export const Default = () => (
   <Equipments
-    equipments={equipments}
+    equipments={equipments || []}
   />
 )
