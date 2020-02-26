@@ -7,7 +7,7 @@ import styles from './style.module.css'
 
 const Equipments = ({
   action,
-  equipments,
+  equipments = [],
 }) => {
   return (
     <div className={styles.container}>
