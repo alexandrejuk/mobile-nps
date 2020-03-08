@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component should render correctly 1`] = `
+<div>
+  <div
+    class="card"
+    role="button"
+    tabindex="0"
+  >
+    <div
+      class="imageContainer"
+    >
+      <img
+        alt="item card"
+        src="https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9"
+      />
+    </div>
+    <div
+      class="title"
+    >
+      <h1
+        class="primary medium center title normal"
+      >
+        A8/60
+      </h1>
+    </div>
+  </div>
+</div>
+`;
