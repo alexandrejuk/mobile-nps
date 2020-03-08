@@ -30,13 +30,22 @@ describe('Button component', () => {
   })
 
   it('should render correctly outline button', () => {
-    const { container } = render(
+    const callback = jest.fn()
+    const { container, getByText } = render(
       <Button
+        action={callback}
         color="outline"
       >
-        Button component
+        {BUTTON_TEXT}
       </Button>
     )
+    const SampleButton = getByText(BUTTON_TEXT)
+
+    expect(callback).not.toHaveBeenCalled()
+
+    fireEvent.click(SampleButton)
+
+    expect(callback).toHaveBeenCalled()
     expect(container).toMatchSnapshot()
   })
 })
