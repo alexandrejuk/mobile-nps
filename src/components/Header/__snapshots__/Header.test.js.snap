@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component should render correctly 1`] = `
+<div>
+  <div
+    class="header"
+  >
+    <div
+      class="icon"
+      role="button"
+    >
+      <img
+        alt="action go back"
+        src="arrow-left.svg"
+      />
+    </div>
+    <div
+      class="logo"
+    >
+      <img
+        alt="company logo"
+        src="logo.svg"
+      />
+    </div>
+  </div>
+</div>
+`;
