@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Equipments container should render correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="logo"
+    >
+      <img
+        alt="company logo"
+        src="logo.svg"
+      />
+    </div>
+    <div
+      class="equipments"
+    >
+      <div
+        class="equipmentItem"
+      >
+        <div
+          class="card"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="imageContainer"
+          >
+            <img
+              alt="item card"
+              src="https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9"
+            />
+          </div>
+          <div
+            class="title"
+          >
+            <h1
+              class="primary medium center title normal"
+            >
+              A8/60
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div
+        class="equipmentItem"
+      >
+        <div
+          class="card"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="imageContainer"
+          >
+            <img
+              alt="item card"
+              src="https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9"
+            />
+          </div>
+          <div
+            class="title"
+          >
+            <h1
+              class="primary medium center title normal"
+            >
+              A7/30
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div
+        class="equipmentItem"
+      >
+        <div
+          class="card"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="imageContainer"
+          >
+            <img
+              alt="item card"
+              src="https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9"
+            />
+          </div>
+          <div
+            class="title"
+          >
+            <h1
+              class="primary medium center title normal"
+            >
+              A/50
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div
+        class="equipmentItem"
+      >
+        <div
+          class="card"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="imageContainer"
+          >
+            <img
+              alt="item card"
+              src="https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9"
+            />
+          </div>
+          <div
+            class="title"
+          >
+            <h1
+              class="primary medium center title normal"
+            >
+              A1/61
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div
+        class="equipmentItem"
+      >
+        <div
+          class="card"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="imageContainer"
+          >
+            <img
+              alt="item card"
+              src="https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9"
+            />
+          </div>
+          <div
+            class="title"
+          >
+            <h1
+              class="primary medium center title normal"
+            >
+              A8/6
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
