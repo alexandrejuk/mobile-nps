@@ -38,12 +38,13 @@ const Equipments = ({
 
 Equipments.propTypes = {
   action: PropTypes.func.isRequired,
-  equipments: PropTypes.shape({
-    action: PropTypes.func.isRequired,
-    id: PropTypes.number.isRequired,
-    image: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-  }).isRequired,
+  equipments: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      image: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+    }).isRequired,
+  ).isRequired,
 }
 
 export default Equipments
