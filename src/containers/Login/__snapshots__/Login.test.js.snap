@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login container should render correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="logo"
+    >
+      <img
+        alt="company logo"
+        src="logo.svg"
+      />
+    </div>
+    <div
+      class="form"
+    >
+      <form>
+        <label
+          class="label"
+          for="code_access"
+        >
+          Código
+        </label>
+        <input
+          class="input"
+          name="code_access"
+          type="number"
+          value=""
+        />
+        <div
+          class="buttonForm"
+        >
+          <button
+            class="button primary"
+            type="submit"
+          >
+            Entrar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;
