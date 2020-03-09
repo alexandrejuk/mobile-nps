@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Detail container should render correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="header"
+    >
+      <div
+        class="icon"
+        role="button"
+      >
+        <img
+          alt="action go back"
+          src="arrow-left.svg"
+        />
+      </div>
+      <div
+        class="logo"
+      >
+        <img
+          alt="company logo"
+          src="logo.svg"
+        />
+      </div>
+    </div>
+    <div
+      class="product"
+    >
+      <h1
+        class="primary medium right title normal"
+      >
+        A6/30
+      </h1>
+      <div
+        class="productImage"
+      >
+        <img
+          alt="product"
+          src="https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9"
+        />
+      </div>
+      <div
+        class="productContent"
+      >
+        <h1
+          class="primary medium left title normal"
+        >
+          Descrição
+        </h1>
+        <div
+          class="productInfo"
+        >
+          <div
+            class="productInfoSection"
+          >
+            <h1
+              class="primary small left title normal"
+            >
+              Tensão
+            </h1>
+            <h1
+              class="primary small left title normal"
+            >
+              220v~/110v~
+            </h1>
+          </div>
+          <div
+            class="productInfoSection"
+          >
+            <h1
+              class="primary small left title normal"
+            >
+              Dimensões
+            </h1>
+            <h1
+              class="primary small left title normal"
+            >
+              AL: 100 cm x L: 330 cm x P: 2400 cm - Peso: 1.2 kg
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="productRevenue"
+    >
+      <h1
+        class="primary medium left title normal"
+      >
+        Receitas
+      </h1>
+    </div>
+    <div
+      class="productRevenueDocumet"
+    >
+      <div
+        class="revenueGallery"
+      >
+        <div
+          class="revenueItem"
+        >
+          <h1
+            class="primary small left title bold"
+          >
+            Cod: AL
+          </h1>
+          <div
+            class="revenuesAvatar"
+          >
+            <img
+              alt="revenue gallery"
+              src="https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="productIssue"
+    >
+      <div
+        class="productIssueTitle"
+      >
+        <h1
+          class="primary medium left title normal"
+        >
+          Erros
+        </h1>
+      </div>
+      <div
+        class="collapse"
+        style="height: 65px;"
+      >
+        <div
+          class="collapseHeader"
+          role="button"
+          tabindex="0"
+        >
+          <h1
+            class="primary medium left title normal"
+          >
+            off 0
+          </h1>
+          <div
+            class="icon"
+          >
+            <img
+              alt="arrow"
+              src="arrow-up.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="collapseBody"
+        >
+          <div
+            class="issueSection"
+          >
+            <h1
+              class="primary small left title bold"
+            >
+              Problema
+            </h1>
+            <h1
+              class="primary small left title normal"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sequi totam corporis cum?
+            </h1>
+          </div>
+          <div
+            class="issueSection"
+          >
+            <h1
+              class="primary small left title bold"
+            >
+              Solução
+            </h1>
+            <h1
+              class="primary small left title normal"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sequi totam corporis cum.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
