@@ -8,6 +8,7 @@
   padding: 20px;
   text-align: center;
   width: 140px;
+  flex: 1;
 }
 
 .card:active,
@@ -30,15 +31,31 @@
   padding: 10px 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 149px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 134px;
+  }
+}
+
 @media screen and (max-width: 475px) {
   .card {
-    width: 140px;
+    width: 135px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .card {
-    width: 120px;
+    height: 190px;
+    width: 115px;
+  }
+  .imageContainer {
+    height: 130px;
   }
 }
 
