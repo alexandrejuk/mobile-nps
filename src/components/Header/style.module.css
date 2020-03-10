@@ -6,12 +6,24 @@
   background-color: var(--color-white);
   border-bottom: solid 1px var( --color-alto);
   box-sizing: border-box;
-  height: 60px;
-  justify-content: space-between;
-  padding: 5px;
+  height: 80px;
+  padding: 10px 20px;
 }
 
 .logo {
   margin: auto;
-  width: 77px;
+  height: 50px;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.icon {
+  width: 20px;
+  height: 12px;
+}
+
+.icon img {
+  height: 100%;
 }
