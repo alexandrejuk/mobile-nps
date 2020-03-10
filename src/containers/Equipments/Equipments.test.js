@@ -9,28 +9,28 @@ import Equipments from './'
 const productsMock = [
   {
     id: 1,
-    image: 'https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9',
-    title: 'A8/60',
+    image: 'M860',
+    name: 'A8/60',
   },
   {
     id: 2,
-    image: 'https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9',
-    title: 'A7/30',
+    image: 'M860',
+    name: 'A7/30',
   },
   {
     id: 3,
-    image: 'https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9',
-    title: 'A/50',
+    image: 'M860',
+    name: 'A/50',
   },
   {
     id: 4,
-    image: 'https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9',
-    title: 'A1/61',
+    image: 'M860',
+    name: 'A1/61',
   },
   {
     id: 5,
-    image: 'https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9',
-    title: 'A8/6',
+    image: 'M860',
+    name: 'A8/6',
   },
 ]
 
@@ -52,15 +52,15 @@ describe('Equipments container', () => {
       .getAllByRole('heading')
       .map(({ textContent }) => textContent)
 
-    const SampleEquipment = EquipmentsContainer.getByText(productsMock[0].title)
+    const SampleEquipment = EquipmentsContainer.getByText(productsMock[0].name)
 
     expect(callback).not.toHaveBeenCalled()
     fireEvent.click(SampleEquipment)
     expect(callback).toHaveBeenCalled()
 
     expect(companyLogo.getAttribute("src")).toEqual("logo.svg")
-    expect(imagesSrc).toEqual(productsMock.map(({ image }) => image))
-    expect(headingItems).toEqual(productsMock.map(({ title }) => title))
+    expect(imagesSrc).toEqual(productsMock.map(() => `m8-60.png`))
+    expect(headingItems).toEqual(productsMock.map(({ name }) => name))
     expect(EquipmentsContainer.container).toMatchSnapshot()
   })
 })
