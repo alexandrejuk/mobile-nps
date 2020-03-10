@@ -12,6 +12,28 @@ import {
 
 import styles from './style.module.css'
 
+import A630 from '../../assets/images/equipments/a6-30.png'
+import A860 from '../../assets/images/equipments/a8-60.png'
+import ATP60E from '../../assets/images/equipments/atp60e.png'
+import FTP60E from '../../assets/images/equipments/ftp60e.png'
+import FTS60E from '../../assets/images/equipments/fts60e.png'
+import Lioness from '../../assets/images/equipments/lioness.png'
+import MTS60E from '../../assets/images/equipments/mts60e.png'
+import PrimaPremix from '../../assets/images/equipments/prima-premix.png'
+import M860 from '../../assets/images/equipments/m8-60.png'
+
+const imagesProduct = {
+  A630,
+  A860,
+  ATP60E,
+  FTP60E,
+  FTS60E,
+  Lioness,
+  MTS60E,
+  PrimaPremix,
+  M860,
+}
+
 const issue = ({
   id,
   name,
@@ -59,13 +81,12 @@ const Detail = ({
   }
 
   const revenue = ({
-    id,
     src,
     title,
   }, index) => (
     <div
       className={styles.revenueItem}
-      key={id}
+      key={index}
       onClick={() => handleRevenue(index)}
     >
       <Title
@@ -78,7 +99,6 @@ const Detail = ({
       </div>
     </div>
   )
-
   return (
     <div className={styles.container}>
       <Header
@@ -91,7 +111,7 @@ const Detail = ({
           textAlign="right"
         />
         <div className={styles.productImage}>
-          <img src={prop('image', product)} alt="product" />
+          <img src={imagesProduct[prop('image', product)]} alt="product" />
         </div>
         <div className={styles.productContent}>
           <Title
@@ -120,7 +140,7 @@ const Detail = ({
               <Title
                 color="primary"
                 size="small"
-                text={`AL: ${prop('height', product)} cm x L: ${prop('width', product)} cm x P: ${prop('deep', product)} cm - Peso: ${prop('weight', product)} kg`}
+                text={`AL: ${prop('height', product)} x L: ${prop('width', product)} x P: ${prop('deep', product)} - Peso: ${prop('weight', product)}`}
               />
             </div>
           </div>
@@ -154,13 +174,17 @@ const Detail = ({
         }
       </div>
       <div className={styles.productIssue}>
-        <div className={styles.productIssueTitle}>
-          <Title
-            size="medium"
-            text="Erros"
-          />
-        </div>
-        {map(issue, prop('issues', product))}
+      {product.issues && (
+          <div className={styles.productIssueTitle}>
+            <Title
+              size="medium"
+              text="Erros"
+            />
+          </div>
+        )}
+        { product.issues && (
+           map(issue, prop('issues', product))
+        )}
       </div>
     </div>
   )
