@@ -39,7 +39,7 @@ exports[`Detail container should render correctly 1`] = `
       >
         <img
           alt="product"
-          src="https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9"
+          src="m8-60.png"
         />
       </div>
       <div
@@ -78,7 +78,7 @@ exports[`Detail container should render correctly 1`] = `
             <h1
               class="primary small left title normal"
             >
-              AL: 100 cm x L: 330 cm x P: 2400 cm - Peso: 1.2 kg
+              AL: 100 x L: 330 x P: 2400 - Peso: 1.2
             </h1>
           </div>
         </div>

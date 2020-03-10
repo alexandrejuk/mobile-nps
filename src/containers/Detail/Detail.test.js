@@ -7,7 +7,7 @@ const productMock = {
   description: 'Maquina de café premium, criada com o mais alto padrão de qualidade, lider de venda em mais de 2.000 mil países.',
   deep: 2400,
   id: 3,
-  image: 'https://www.nestleprofessional.com.br/sites/g/files/gfb331/f/styles/product/public/media/maquina-alegria-8x60-2.png?itok=3w8wjKl9',
+  image: 'M860',
   issues: [
     {
       id: 1,
@@ -48,13 +48,13 @@ describe('Detail container', () => {
     const SampleEquimentVoltage = DetailContainer.getByText(productMock.voltage)
     const SampleTitleVoltage = DetailContainer.getByText('Tensão')
     const SampleTitleSize = DetailContainer.getByText('Dimensões')
-    const SampleSize = DetailContainer.getByText(`AL: ${productMock.height} cm x L: ${productMock.width} cm x P: ${productMock.deep} cm - Peso: ${productMock.weight} kg`)
+    const SampleSize = DetailContainer.getByText(`AL: ${productMock.height} x L: ${productMock.width} x P: ${productMock.deep} - Peso: ${productMock.weight}`)
 
     expect(SampleDescription).toBeInTheDocument()
     expect(SampleTitleSize).toBeInTheDocument()
     expect(SampleTitleVoltage).toBeInTheDocument()
     expect(SampleSize).toBeInTheDocument()
-    expect(SampleImgSrc.getAttribute('src')).toEqual(productMock.image)
+    expect(SampleImgSrc.getAttribute('src')).toEqual('m8-60.png')
     expect(SampleEquimentCode).toBeInTheDocument()
     expect(SampleEquimentVoltage).toBeInTheDocument()
     expect(DetailContainer.container).toMatchSnapshot()
