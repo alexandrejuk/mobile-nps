@@ -60,9 +60,9 @@
 
 .revenuesAvatar {
   border-radius: 3px;
-  height: 82px;
+  height: auto;
   overflow: hidden;
-  width: 82px;
+  width: 105px;
 }
 
 .revenuesAvatar img {
@@ -71,12 +71,13 @@
 
 .revenueGallery {
   align-items: center;
-  display: flex;;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  text-align: center;
 }
 
 .revenueItem {
   flex: 1;
   margin-bottom: 20px;
+  text-align: center;
 }
