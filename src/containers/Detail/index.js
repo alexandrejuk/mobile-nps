@@ -127,7 +127,7 @@ const Detail = ({
                 <Title
                   color="primary"
                   size="small"
-                  text="Tensão"
+                  text="Potência"
                 />
                 <Title
                   color="primary"
