@@ -85,7 +85,7 @@ exports[`Detail container should render correctly 1`] = `
               <h1
                 class="primary small left title normal"
               >
-                Tensão
+                Potência
               </h1>
               <h1
                 class="primary small left title bold"
