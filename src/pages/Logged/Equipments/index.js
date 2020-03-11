@@ -4,9 +4,12 @@ import { withRouter } from 'react-router'
 import EquipmentsContainer from '../../../containers/Equipments'
 import EquipmentsMock from '../../../utils/api/mocks'
 
+import GAInitialize from '../../../utils/ga'
+
 const Equipments = ({
   history,
 }) => {
+  GAInitialize('/equipments')
   const goToDetail = id => history.push(`/logged/detail/${id}`)
   return (
     <EquipmentsContainer

@@ -4,10 +4,13 @@ import { withRouter } from 'react-router'
 import DetailContainer from '../../../containers/Detail'
 import EquipmentsMock from '../../../utils/api/mocks'
 
+import GAInitialize from '../../../utils/ga'
+
 const Detail = ({
   history,
   match
 }) => {
+  GAInitialize('/equipment-detail')
   const goBack = () => history.goBack()
   const { id } = match.params
   const product = EquipmentsMock.find(product => product.id === Number(id))
