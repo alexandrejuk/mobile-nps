@@ -13,19 +13,19 @@ const EquipmentsMock = [
       "revenues": [
           {
               "title": "AO 140ml LP",
-              "src": null
+              "src": "AO140mlLP"
           },
           {
               "title": "AO 90ml LP",
-              "src": null
+              "src": 'AO90mlLP'
           },
           {
               "title": "AP 140ml LP",
-              "src": null
+              "src": "AP140mlLP"
           },
           {
               "title": "AP 90ml LP",
-              "src": null
+              "src": "AP90mlLP"
           }
       ]
   },
@@ -43,19 +43,19 @@ const EquipmentsMock = [
       "revenues": [
           {
               "title": "AO 140ml LP",
-              "src": null
+              "src": "AO140mlLP"
           },
           {
               "title": "AO 90ml LP",
-              "src": null
+              "src": "AO90mlLP"
           },
           {
               "title": "AP 140ml LP",
-              "src": null
+              "src": "AP140mlLP"
           },
           {
               "title": "AP 90ml LP",
-              "src": null
+              "src": "AO90mlLP"
           }
       ]
   },
@@ -73,19 +73,19 @@ const EquipmentsMock = [
       "revenues": [
           {
               "title": "X 140ml",
-              "src": null
+              "src": "X140ml"
           },
           {
               "title": "X 90ml",
-              "src": null
+              "src": "X90ml"
           },
           {
               "title": "AM 140ml",
-              "src": null
+              "src": "AM140ml"
           },
           {
               "title": "AM 90ml",
-              "src": null
+              "src": "AM90ml"
           }
       ]
   },
@@ -103,23 +103,23 @@ const EquipmentsMock = [
       "revenues": [
           {
               "title": "AO 140ml",
-              "src": null
+              "src": "AO140ml"
           },
           {
               "title": "AO 90ml",
-              "src": null
+              "src": "AO90ml"
           },
           {
               "title": "AP 140ml",
-              "src": null
+              "src": "AP140ml"
           },
           {
               "title": "AP 90ml",
-              "src": null
+              "src": "AP90ml"
           },
           {
               "title": "C018",
-              "src": null
+              "src": "C018"
           }
       ]
   },
@@ -137,11 +137,11 @@ const EquipmentsMock = [
       "revenues": [
           {
               "title": "B M860",
-              "src": null
+              "src": "B-M860"
           },
           {
               "title": "E M860",
-              "src": null
+              "src": "E-M860"
           }
       ]
   },
@@ -159,15 +159,15 @@ const EquipmentsMock = [
       "revenues": [
           {
               "title": "AI 140ml",
-              "src": null
+              "src": "AI140ml"
           },
           {
               "title": "AI 90ml",
-              "src": null
+              "src": "AI90ml"
           },
           {
               "title": "C001",
-              "src": null
+              "src": "C001"
           }
       ]
   },
@@ -185,43 +185,43 @@ const EquipmentsMock = [
       "revenues": [
           {
               "title": "H",
-              "src": null
+              "src": "H-MTS60E"
           },
           {
               "title": "H Menu 2",
-              "src": null
+              "src": "hMenu2-MTS60E"
           },
           {
               "title": "F",
-              "src": null
+              "src": "F-MTS60E"
           },
           {
               "title": "I",
-              "src": null
+              "src": "I-MTS60E"
           },
           {
               "title": "G",
-              "src": null
+              "src": "G-MTS60E"
           },
           {
               "title": "J",
-              "src": null
+              "src": "J-MTS60E"
           },
           {
               "title": "K",
-              "src": null
+              "src": "k-MTS60E"
           },
           {
               "title": "C009",
-              "src": null
+              "src": "C009-GPA"
           },
           {
               "title": "C009 Menu 2",
-              "src": null
+              "src": "C009-GPAMenu2"
           },
           {
               "title": "C010",
-              "src": null
+              "src": "C010-Minuto"
           }
       ]
   },
@@ -239,15 +239,15 @@ const EquipmentsMock = [
       "revenues": [
           {
               "title": "AI 140ml",
-              "src": null
+              "src": "AI140ml"
           },
           {
               "title": "AI 90ml",
-              "src": null
+              "src": "AI90ml"
           },
           {
               "title": "C001",
-              "src": null
+              "src": "C001"
           }
       ]
   },
@@ -265,43 +265,43 @@ const EquipmentsMock = [
       "revenues": [
           {
               "title": "H",
-              "src": null
+              "src": "H-MTS60E"
           },
           {
               "title": "H Menu 2",
-              "src": null
+              "src": "HMenu2-MTS60E"
           },
           {
               "title": "F",
-              "src": null
+              "src": "F-MTS60E"
           },
           {
               "title": "I",
-              "src": null
+              "src": "I-MTS60E"
           },
           {
               "title": "G",
-              "src": null
+              "src": "G-MTS60E"
           },
           {
               "title": "J",
-              "src": null
+              "src": "J-MTS60E"
           },
           {
               "title": "K",
-              "src": null
+              "src": "K-MTS60E"
           },
           {
               "title": "C009",
-              "src": null
+              "src": "C009-GPA"
           },
           {
               "title": "C009 Menu 2",
-              "src": null
+              "src": "C009-GPAMenu2"
           },
           {
               "title": "C010",
-              "src": null
+              "src": "C010-Minuto"
           }
       ]
   }
