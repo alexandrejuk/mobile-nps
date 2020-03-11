@@ -9,7 +9,8 @@ import GAInitialize from '../../../utils/ga'
 const Practices = ({
   history,
 }) => {
-  GAInitialize('/practices')
+  GAInitialize('/logged/practices')
+
   const [step, setStep] = useState(0)
 
   const goBack = () => history.push('/logged/equipments')
