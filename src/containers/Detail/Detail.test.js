@@ -46,7 +46,7 @@ describe('Detail container', () => {
     const SampleImgSrc = DetailContainer.getByAltText('product')
     const SampleDescription = DetailContainer.getByText('Descrição')
     const SampleEquimentVoltage = DetailContainer.getByText(productMock.voltage)
-    const SampleTitleVoltage = DetailContainer.getByText('Tensão')
+    const SampleTitleVoltage = DetailContainer.getByText('Potência')
     const SampleTitleSize = DetailContainer.getByText('Dimensões')
 
     expect(SampleDescription).toBeInTheDocument()
