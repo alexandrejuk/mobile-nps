@@ -48,12 +48,10 @@ describe('Detail container', () => {
     const SampleEquimentVoltage = DetailContainer.getByText(productMock.voltage)
     const SampleTitleVoltage = DetailContainer.getByText('Tensão')
     const SampleTitleSize = DetailContainer.getByText('Dimensões')
-    const SampleSize = DetailContainer.getByText(`AL: ${productMock.height} x L: ${productMock.width} x P: ${productMock.deep} - Peso: ${productMock.weight}`)
 
     expect(SampleDescription).toBeInTheDocument()
     expect(SampleTitleSize).toBeInTheDocument()
     expect(SampleTitleVoltage).toBeInTheDocument()
-    expect(SampleSize).toBeInTheDocument()
     expect(SampleImgSrc.getAttribute('src')).toEqual('m8-60.png')
     expect(SampleEquimentCode).toBeInTheDocument()
     expect(SampleEquimentVoltage).toBeInTheDocument()

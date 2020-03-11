@@ -102,16 +102,11 @@ const Detail = ({
             text="Descrição"
           />
           <div className={styles.productInfo}>
-            <div className={styles.productInfoSection}>
+            <div className={styles.descriptionText}>
               <Title
                 color="primary"
                 size="small"
-                text="Tensão"
-              />
-              <Title
-                color="primary"
-                size="small"
-                text={prop('voltage', product)}
+                text={prop('description', product)}
               />
             </div>
             <div className={styles.productInfoSection}>
@@ -123,8 +118,37 @@ const Detail = ({
               <Title
                 color="primary"
                 size="small"
-                text={`AL: ${prop('height', product)} x L: ${prop('width', product)} x P: ${prop('deep', product)} - Peso: ${prop('weight', product)}`}
+                type="bold"
+                text={`A: ${prop('height', product)} x L: ${prop('width', product)} x P: ${prop('deep', product)}`}
               />
+            </div>
+            <div className={styles.equipmentTechnical}>
+              <div className={styles.productInfoSection}>
+                <Title
+                  color="primary"
+                  size="small"
+                  text="Tensão"
+                />
+                <Title
+                  color="primary"
+                  size="small"
+                  type="bold"
+                  text={prop('voltage', product)}
+                />
+              </div>
+              <div className={styles.productInfoSection}>
+                <Title
+                  color="primary"
+                  size="small"
+                  text="Peso"
+                />
+                <Title
+                  color="primary"
+                  size="small"
+                  type="bold"
+                  text={`${prop('weight', product)}`}
+                />
+              </div>
             </div>
           </div>
         </div>
