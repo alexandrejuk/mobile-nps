@@ -25,14 +25,9 @@
   padding-top: 30px;
 }
 
-.productInfo {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
 .productInfoSection {
   flex: 1;
+  margin-top: 10px;
 }
 
 .productRevenue {
@@ -80,4 +75,14 @@
   flex: 1;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.descriptionText {
+  text-align: justify;
+  width: 100%;
+}
+
+.equipmentTechnical {
+  display: flex;
+  justify-content: space-between;
 }

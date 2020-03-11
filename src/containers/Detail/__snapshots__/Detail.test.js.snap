@@ -54,17 +54,12 @@ exports[`Detail container should render correctly 1`] = `
           class="productInfo"
         >
           <div
-            class="productInfoSection"
+            class="descriptionText"
           >
             <h1
               class="primary small left title normal"
             >
-              Tensão
-            </h1>
-            <h1
-              class="primary small left title normal"
-            >
-              220v~/110v~
+              Maquina de café premium, criada com o mais alto padrão de qualidade, lider de venda em mais de 2.000 mil países.
             </h1>
           </div>
           <div
@@ -76,10 +71,42 @@ exports[`Detail container should render correctly 1`] = `
               Dimensões
             </h1>
             <h1
-              class="primary small left title normal"
+              class="primary small left title bold"
             >
-              AL: 100 x L: 330 x P: 2400 - Peso: 1.2
+              A: 100 x L: 330 x P: 2400
             </h1>
+          </div>
+          <div
+            class="equipmentTechnical"
+          >
+            <div
+              class="productInfoSection"
+            >
+              <h1
+                class="primary small left title normal"
+              >
+                Tensão
+              </h1>
+              <h1
+                class="primary small left title bold"
+              >
+                220v~/110v~
+              </h1>
+            </div>
+            <div
+              class="productInfoSection"
+            >
+              <h1
+                class="primary small left title normal"
+              >
+                Peso
+              </h1>
+              <h1
+                class="primary small left title bold"
+              >
+                1.2
+              </h1>
+            </div>
           </div>
         </div>
       </div>
