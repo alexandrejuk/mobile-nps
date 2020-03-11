@@ -137,11 +137,11 @@ const EquipmentsMock = [
       "revenues": [
           {
               "title": "B M860",
-              "src": "B-M860"
+              "src": "BM860"
           },
           {
               "title": "E M860",
-              "src": "E-M860"
+              "src": "EM860"
           }
       ]
   },
@@ -185,43 +185,43 @@ const EquipmentsMock = [
       "revenues": [
           {
               "title": "H",
-              "src": "H-MTS60E"
+              "src": "HMTS60E"
           },
           {
               "title": "H Menu 2",
-              "src": "hMenu2-MTS60E"
+              "src": "HMenu2MTS60E"
           },
           {
               "title": "F",
-              "src": "F-MTS60E"
+              "src": "FMTS60E"
           },
           {
               "title": "I",
-              "src": "I-MTS60E"
+              "src": "IMTS60E"
           },
           {
               "title": "G",
-              "src": "G-MTS60E"
+              "src": "GMTS60E"
           },
           {
               "title": "J",
-              "src": "J-MTS60E"
+              "src": "JMTS60E"
           },
           {
               "title": "K",
-              "src": "k-MTS60E"
+              "src": "KMTS60E"
           },
           {
               "title": "C009",
-              "src": "C009-GPA"
+              "src": "C009GPA"
           },
           {
               "title": "C009 Menu 2",
-              "src": "C009-GPAMenu2"
+              "src": "C009GPAMenu2"
           },
           {
               "title": "C010",
-              "src": "C010-Minuto"
+              "src": "C010Minuto"
           }
       ]
   },
@@ -265,43 +265,43 @@ const EquipmentsMock = [
       "revenues": [
           {
               "title": "H",
-              "src": "H-MTS60E"
+              "src": "HMTS60E"
           },
           {
               "title": "H Menu 2",
-              "src": "HMenu2-MTS60E"
+              "src": "HMenu2MTS60E"
           },
           {
               "title": "F",
-              "src": "F-MTS60E"
+              "src": "FMTS60E"
           },
           {
               "title": "I",
-              "src": "I-MTS60E"
+              "src": "IMTS60E"
           },
           {
               "title": "G",
-              "src": "G-MTS60E"
+              "src": "GMTS60E"
           },
           {
               "title": "J",
-              "src": "J-MTS60E"
+              "src": "JMTS60E"
           },
           {
               "title": "K",
-              "src": "K-MTS60E"
+              "src": "KMTS60E"
           },
           {
               "title": "C009",
-              "src": "C009-GPA"
+              "src": "C009GPA"
           },
           {
               "title": "C009 Menu 2",
-              "src": "C009-GPAMenu2"
+              "src": "C009GPAMenu2"
           },
           {
               "title": "C010",
-              "src": "C010-Minuto"
+              "src": "C010Minuto"
           }
       ]
   }
