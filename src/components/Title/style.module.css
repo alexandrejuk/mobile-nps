@@ -38,3 +38,7 @@
 .right {
   text-align: right;
 }
+
+.secondary {
+  color: var(--color-jumbo);
+}

@@ -1,0 +1,42 @@
+@import '../../assets/css/colors.css';
+
+.container {
+  padding: 40px 0;
+  background-color: var(--color-white);
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  margin: 20px auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.image img {
+  height: 100%;
+}
+
+.stepButton {
+  padding: 40px 20px 0 20px;
+}
+
+.stepButton:first-child {
+  margin-bottom: 20px;
+}
+
+.firtButton {
+  margin-bottom: 20px;
+}
+
+.padding20 {
+  padding: 0 20px;
+}
+
+.closeTools {
+  width: 100%;
+  text-align: right;
+  padding: 0 20px;
+  box-sizing: border-box;
+}

@@ -32,6 +32,7 @@ Title.propTypes = {
   ]),
   color: PropTypes.PropTypes.oneOf([
     'primary',
+    'secondary',
   ]),
   size: PropTypes.PropTypes.oneOf([
     'medium',
