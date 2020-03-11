@@ -42,6 +42,7 @@ describe('Equipments container', () => {
       <Equipments
         action={callback}
         equipments={productsMock}
+        practicesAction={callback}
       />
     )
     const companyLogo = await EquipmentsContainer.findByAltText("company logo")

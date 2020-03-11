@@ -36,6 +36,10 @@
   color: var(--color-white);
 }
 
+.button.outline:focus,
 .button.outline:active {
   opacity: 0.8;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-california);
+  color: var(--color-california);
 }

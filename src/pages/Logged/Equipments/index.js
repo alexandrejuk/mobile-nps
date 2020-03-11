@@ -11,10 +11,12 @@ const Equipments = ({
 }) => {
   GAInitialize('/equipments')
   const goToDetail = id => history.push(`/logged/detail/${id}`)
+  const practicesAction = () => history.push(`/logged/practices`)
   return (
     <EquipmentsContainer
       action={goToDetail}
       equipments={EquipmentsMock}
+      practicesAction={practicesAction}
     />
   )
 }
