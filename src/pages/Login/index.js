@@ -4,10 +4,12 @@ import { withRouter } from 'react-router'
 import { isEmpty } from 'ramda'
 
 import LoginContainer from '../../containers/Login'
+import GAInitialize from '../../utils/ga'
 
 const Login = ({
   history,
 }) => {
+  GAInitialize('/login')
   const access = 2102
   const [data, setData] = useState({
     code_access: '',
