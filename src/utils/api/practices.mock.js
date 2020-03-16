@@ -41,7 +41,7 @@ const goodPractices = [
     image: 'PT7',
   },
   {
-    title: "Procedimento 8.",
+    title: "Procedimento 8",
     message: "Verificar o nível dos produtos nos canisters (Caso seja necessário abastecer usar pacotes já abertos).",
     image: 'PT8',
   },
