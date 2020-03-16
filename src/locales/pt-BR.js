@@ -16,6 +16,12 @@ const pt = {
     width: 'L',
     weight: 'Peso',
   },
+  practices: {
+    start: 'Iniciar',
+    next: 'Próximo',
+    previous: 'Voltar',
+    goToHome: 'Ir para home',
+  },
 }
 
 export default pt

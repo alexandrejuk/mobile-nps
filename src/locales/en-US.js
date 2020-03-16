@@ -16,6 +16,12 @@ const en = {
     width: 'W',
     weight: 'Weight',
   },
+  practices: {
+    start: 'Start',
+    next: 'Next',
+    previous: 'Previous',
+    goToHome: 'Go to home',
+  },
 }
 
 export default en
