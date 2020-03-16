@@ -2,6 +2,8 @@ import React from 'react'
 import Form from 'react-vanilla-form'
 import PropTypes from 'prop-types'
 
+import Translate from '../../locales'
+
 import CompanyLogo from '../../assets/images/logo.svg'
 import {
   Button,
@@ -27,7 +29,7 @@ const Login = ({
           className={styles.label}
           htmlFor="code_access"
         >
-          Código
+          {Translate('login.accessCode')}
         </label>
         <input
           className={styles.input}
@@ -40,7 +42,7 @@ const Login = ({
             color="primary"
             type="submit"
           >
-            Entrar
+            {Translate('login.buttonTitle')}
           </Button>
         </div>
       </Form>

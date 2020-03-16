@@ -18,7 +18,7 @@ describe('Login container', () => {
       />
     )
 
-    const SampleButton = LoginContainer.getByText('Entrar')
+    const SampleButton = LoginContainer.getByText('Sign Up')
 
     expect(callback).not.toHaveBeenCalled()
     fireEvent.click(SampleButton)
@@ -28,7 +28,7 @@ describe('Login container', () => {
         .getByAltText('company logo')
         .getAttribute('src')
     ).toEqual('logo.svg')
-    expect(LoginContainer.getByText('Código')).toBeInTheDocument()
+    expect(LoginContainer.getByText('Access code')).toBeInTheDocument()
     expect(LoginContainer.container).toMatchSnapshot()
   })
 })
