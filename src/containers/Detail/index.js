@@ -20,8 +20,8 @@ import {
 const issue = ({
   id,
   name,
-  problem,
-  resolve,
+  problems,
+  resolves,
 }) => (
   <Collapse key={id} title={name}>
     <div className={styles.issueSection}>
@@ -29,11 +29,16 @@ const issue = ({
         size="small"
         text="Problema"
         type="bold"
-      />
-      <Title
-        size="small"
-        text={problem}
-      />
+      />      
+    {
+      map((problem, index) =>(
+        <Title
+          key={`${index}${problem}`}
+          size="small"
+          text={problem}
+        />  
+      ), problems)
+    }
     </div>
     <div className={styles.issueSection}>
       <Title
@@ -41,11 +46,16 @@ const issue = ({
         text="Solução"
         type="bold"
       />
-      <Title
-        size="small"
-        text={resolve}
-      />
-    </div>
+    {
+      map((resolve, index) => (
+        <Title
+          key={`${index}${resolve}`}
+          size="small"
+          text={resolve}
+        />
+      ), resolves) 
+    }
+     </div>
   </Collapse>
 )
 
@@ -127,13 +137,13 @@ const Detail = ({
                 <Title
                   color="primary"
                   size="small"
-                  text="Potência"
+                  text="Potência/Tensão"
                 />
                 <Title
                   color="primary"
                   size="small"
                   type="bold"
-                  text={prop('voltage', product)}
+                  text={`${prop('potency', product)} / ${prop('tension', product)}`}
                 />
               </div>
               <div className={styles.productInfoSection}>
