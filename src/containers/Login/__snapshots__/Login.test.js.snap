@@ -21,7 +21,7 @@ exports[`Login container should render correctly 1`] = `
           class="label"
           for="code_access"
         >
-          Código
+          Access code
         </label>
         <input
           class="input"
@@ -36,7 +36,7 @@ exports[`Login container should render correctly 1`] = `
             class="button primary"
             type="submit"
           >
-            Entrar
+            Sign Up
           </button>
         </div>
       </form>
