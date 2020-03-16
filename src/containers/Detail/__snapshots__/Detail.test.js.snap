@@ -85,12 +85,12 @@ exports[`Detail container should render correctly 1`] = `
               <h1
                 class="primary small left title normal"
               >
-                Potência
+                Potência/Tensão
               </h1>
               <h1
                 class="primary small left title bold"
               >
-                220v~/110v~
+                220v~ / 1600w
               </h1>
             </div>
             <div
@@ -190,11 +190,6 @@ exports[`Detail container should render correctly 1`] = `
             >
               Problema
             </h1>
-            <h1
-              class="primary small left title normal"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sequi totam corporis cum?
-            </h1>
           </div>
           <div
             class="issueSection"
@@ -203,11 +198,6 @@ exports[`Detail container should render correctly 1`] = `
               class="primary small left title bold"
             >
               Solução
-            </h1>
-            <h1
-              class="primary small left title normal"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sequi totam corporis cum.
             </h1>
           </div>
         </div>

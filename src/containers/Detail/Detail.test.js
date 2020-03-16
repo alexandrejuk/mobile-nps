@@ -26,7 +26,8 @@ const productMock = {
       description: 'Receita blabla',
     }
   ],
-  voltage: '220v~/110v~',
+  potency: '220v~',
+  tension: '1600w',
   width: 330,
   weight: 1.2,
 }
@@ -45,16 +46,16 @@ describe('Detail container', () => {
     const SampleEquimentCode = DetailContainer.getByText(productMock.name)
     const SampleImgSrc = DetailContainer.getByAltText('product')
     const SampleDescription = DetailContainer.getByText('Descrição')
-    const SampleEquimentVoltage = DetailContainer.getByText(productMock.voltage)
-    const SampleTitleVoltage = DetailContainer.getByText('Potência')
+    const SampleEquimentPotency = DetailContainer.getByText(`${productMock.potency} / ${productMock.tension}`)
+    const SampleTitleVoltage = DetailContainer.getByText('Potência/Tensão')
     const SampleTitleSize = DetailContainer.getByText('Dimensões')
 
     expect(SampleDescription).toBeInTheDocument()
     expect(SampleTitleSize).toBeInTheDocument()
-    expect(SampleTitleVoltage).toBeInTheDocument()
+    expect(SampleEquimentPotency).toBeInTheDocument()
     expect(SampleImgSrc.getAttribute('src')).toEqual('m8-60.png')
     expect(SampleEquimentCode).toBeInTheDocument()
-    expect(SampleEquimentVoltage).toBeInTheDocument()
+    expect(SampleTitleVoltage).toBeInTheDocument()
     expect(DetailContainer.container).toMatchSnapshot()
   })
 })

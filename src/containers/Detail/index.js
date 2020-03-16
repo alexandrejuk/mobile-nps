@@ -29,14 +29,14 @@ const issue = ({
         size="small"
         text="Problema"
         type="bold"
-      />      
+      />
     {
-      map((problem, index) =>(
+      problems && map((problem, index) =>(
         <Title
           key={`${index}${problem}`}
           size="small"
           text={problem}
-        />  
+        />
       ), problems)
     }
     </div>
@@ -47,13 +47,13 @@ const issue = ({
         type="bold"
       />
     {
-      map((resolve, index) => (
+      resolves && map((resolve, index) => (
         <Title
           key={`${index}${resolve}`}
           size="small"
           text={resolve}
         />
-      ), resolves) 
+      ), resolves)
     }
      </div>
   </Collapse>
