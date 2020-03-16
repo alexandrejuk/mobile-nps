@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { map, prop } from 'ramda'
 import Lightbox from 'react-image-lightbox'
 import 'react-image-lightbox/style.css'
+import Translate from '../../locales'
 
 import {
   Collapse,
@@ -27,7 +28,7 @@ const issue = ({
     <div className={styles.issueSection}>
       <Title
         size="small"
-        text="Problema"
+        text={Translate('detail.problem')}
         type="bold"
       />
     {
@@ -43,7 +44,7 @@ const issue = ({
     <div className={styles.issueSection}>
       <Title
         size="small"
-        text="Solução"
+        text={Translate('detail.solution')}
         type="bold"
       />
     {
@@ -109,7 +110,7 @@ const Detail = ({
         <div className={styles.productContent}>
           <Title
             size="medium"
-            text="Descrição"
+            text={Translate('detail.description')}
           />
           <div className={styles.productInfo}>
             <div className={styles.descriptionText}>
@@ -123,13 +124,13 @@ const Detail = ({
               <Title
                 color="primary"
                 size="small"
-                text="Dimensões"
+                text={Translate('detail.dimension')}
               />
               <Title
                 color="primary"
                 size="small"
                 type="bold"
-                text={`A: ${prop('height', product)} x L: ${prop('width', product)} x P: ${prop('deep', product)}`}
+                text={`${Translate('detail.height')}: ${prop('height', product)} x ${Translate('detail.width')}: ${prop('width', product)} x ${Translate('detail.deep')}: ${prop('deep', product)}`}
               />
             </div>
             <div className={styles.equipmentTechnical}>
@@ -137,7 +138,7 @@ const Detail = ({
                 <Title
                   color="primary"
                   size="small"
-                  text="Potência/Tensão"
+                  text={Translate('detail.potencyTension')}
                 />
                 <Title
                   color="primary"
@@ -150,7 +151,7 @@ const Detail = ({
                 <Title
                   color="primary"
                   size="small"
-                  text="Peso"
+                  text={Translate('detail.weight')}
                 />
                 <Title
                   color="primary"
@@ -166,7 +167,7 @@ const Detail = ({
       <div className={styles.productRevenue}>
         <Title
           size="medium"
-          text="Receitas"
+          text={Translate('detail.revenues')}
         />
       </div>
       <div className={styles.productRevenueDocumet}>
@@ -195,7 +196,7 @@ const Detail = ({
           <div className={styles.productIssueTitle}>
             <Title
               size="medium"
-              text="Erros"
+              text={Translate('detail.errors')}
             />
           </div>
         )}

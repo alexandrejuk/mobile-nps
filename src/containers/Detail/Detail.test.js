@@ -45,10 +45,10 @@ describe('Detail container', () => {
 
     const SampleEquimentCode = DetailContainer.getByText(productMock.name)
     const SampleImgSrc = DetailContainer.getByAltText('product')
-    const SampleDescription = DetailContainer.getByText('Descrição')
+    const SampleDescription = DetailContainer.getByText('Description')
     const SampleEquimentPotency = DetailContainer.getByText(`${productMock.potency} / ${productMock.tension}`)
-    const SampleTitleVoltage = DetailContainer.getByText('Potência/Tensão')
-    const SampleTitleSize = DetailContainer.getByText('Dimensões')
+    const SampleTitleVoltage = DetailContainer.getByText('Potency / Tension')
+    const SampleTitleSize = DetailContainer.getByText('Dimension')
 
     expect(SampleDescription).toBeInTheDocument()
     expect(SampleTitleSize).toBeInTheDocument()

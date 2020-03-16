@@ -48,7 +48,7 @@ exports[`Detail container should render correctly 1`] = `
         <h1
           class="primary medium left title normal"
         >
-          Descrição
+          Description
         </h1>
         <div
           class="productInfo"
@@ -68,12 +68,12 @@ exports[`Detail container should render correctly 1`] = `
             <h1
               class="primary small left title normal"
             >
-              Dimensões
+              Dimension
             </h1>
             <h1
               class="primary small left title bold"
             >
-              A: 100 x L: 330 x P: 2400
+              H: 100 x W: 330 x D: 2400
             </h1>
           </div>
           <div
@@ -85,7 +85,7 @@ exports[`Detail container should render correctly 1`] = `
               <h1
                 class="primary small left title normal"
               >
-                Potência/Tensão
+                Potency / Tension
               </h1>
               <h1
                 class="primary small left title bold"
@@ -99,7 +99,7 @@ exports[`Detail container should render correctly 1`] = `
               <h1
                 class="primary small left title normal"
               >
-                Peso
+                Weight
               </h1>
               <h1
                 class="primary small left title bold"
@@ -117,7 +117,7 @@ exports[`Detail container should render correctly 1`] = `
       <h1
         class="primary medium left title normal"
       >
-        Receitas
+        Revenues
       </h1>
     </div>
     <div
@@ -153,7 +153,7 @@ exports[`Detail container should render correctly 1`] = `
         <h1
           class="primary medium left title normal"
         >
-          Erros
+          Errors
         </h1>
       </div>
       <div
@@ -188,7 +188,7 @@ exports[`Detail container should render correctly 1`] = `
             <h1
               class="primary small left title bold"
             >
-              Problema
+              Problem
             </h1>
           </div>
           <div
@@ -197,7 +197,7 @@ exports[`Detail container should render correctly 1`] = `
             <h1
               class="primary small left title bold"
             >
-              Solução
+              Solution
             </h1>
           </div>
         </div>
