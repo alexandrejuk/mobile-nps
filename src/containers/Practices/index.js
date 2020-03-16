@@ -4,7 +4,7 @@ import {
   Button,
   Title
 } from '../../components'
-
+import Translate from '../../locales'
 import styles from './style.module.css'
 import ImagesPractice from './images'
 import CloseSvg from '../../assets/icons/close.svg'
@@ -13,6 +13,7 @@ const Practice = ({
   close,
   practice,
   step,
+  steps,
   onStep,
   onPrevStep
 }) => {
@@ -25,8 +26,8 @@ const Practice = ({
 
   const ButtonText = (
     step === 0
-      ? 'Iniciar'
-      : 'Próximo'
+      ? Translate('practices.start')
+      : Translate('practices.next')
   )
 
   return (
@@ -65,13 +66,13 @@ const Practice = ({
       <div className={styles.stepButton}>
         <div className={styles.firtButton}>
           <Button color="primary" action={onStep}>
-            {step === 44 ? 'Ir para home' : ButtonText}
+            {step === steps ? Translate('practices.goToHome') : ButtonText}
           </Button>
         </div>
         {
           step > 0 && (
             <Button color="outline" action={onPrevStep}>
-              Voltar
+              {Translate('practices.previous')}
             </Button>
           )
         }
@@ -83,6 +84,7 @@ const Practice = ({
 Practice.propTypes = {
   close: PropTypes.func.isRequired,
   step: PropTypes.number.isRequired,
+  steps: PropTypes.number.isRequired,
   onStep: PropTypes.func.isRequired,
   onPrevStep: PropTypes.func.isRequired,
   practice: PropTypes.shape({

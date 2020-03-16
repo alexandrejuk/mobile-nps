@@ -40,6 +40,7 @@ const Practices = ({
       onPrevStep={handlePrev}
       practice={goodPractices[step]}
       step={step}
+      steps={(goodPractices.length - 1)}
     />
   )
 }
