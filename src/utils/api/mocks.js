@@ -307,7 +307,7 @@ const EquipmentsMock = [
  {
       "id": 3,
       "description": "Com a máquina NESCAFÉ® Alegria, você oferece variedade de cappuccinos e achocolatados para o seu negócio. É perfeita para quem quer qualidade, praticidade e padronização, pois a máquina conta com 6 opções de bebidas saborosas, cremosas e exclusivas da Nestlé®.",
-      "name": "A6/30",
+      "name": "A630",
       "height": "56,0 cm",
       "image": 'A630',
       "width": "31,5 cm",
@@ -460,7 +460,7 @@ const EquipmentsMock = [
  {
       "id": 4,
       "description": "Com a máquina NESCAFÉ® Alegria, você oferece variedade de cappuccinos e achocolatados para o seu negócio. É perfeita para quem quer qualidade, praticidade e padronização, pois a máquina conta com 8 opções de bebidas saborosas, cremosas e exclusivas da Nestlé®.",
-      "name": "A8/60",
+      "name": "A860",
       "height": "61,5 cm",
       "image": 'A860',
       "width": "46,0 cm",
@@ -617,7 +617,7 @@ const EquipmentsMock = [
  {
       "id": 5,
       "description": "NESCAFÉ Milano – A bebida premium perfeita para aqueles momentos especiais. Surpreenda-se com NESCAFÉ® Milano, uma solução que entrega bebidas premium em poucos segundos, com padronização e qualidade garantidas.",
-      "name": "M8/60",
+      "name": "M860",
       "height": "66,0 cm",
       "image": 'M860',
       "width": "46,0 cm",
