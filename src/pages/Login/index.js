@@ -10,7 +10,7 @@ const Login = ({
   history,
 }) => {
   GAInitialize('/login')
-  const access = 2102
+  const access = Number(process.env.REACT_APP_ACCESS_CODE)
   const [data, setData] = useState({
     code_access: '',
   })
