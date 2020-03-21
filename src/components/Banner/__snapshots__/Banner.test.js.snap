@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner component should render correctly primary banner 1`] = `
+<div>
+  <div
+    class="banner primary"
+  >
+    <img
+      alt="banner information"
+      src="banner-1.svg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Banner component should render correctly secondary banner 1`] = `
+<div>
+  <div
+    class="banner secondary"
+  >
+    <img
+      alt="banner information"
+      src="banner-1.svg"
+    />
+  </div>
+</div>
+`;
