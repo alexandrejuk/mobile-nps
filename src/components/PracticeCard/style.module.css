@@ -1,0 +1,42 @@
+@import '../../assets/css/colors.css';
+
+.card {
+  background: var(--color-white);
+  border-radius: 8px;
+  box-shadow: 0px 2.27027px 2.27027px rgba(0, 0, 0, 0.24), 0px 0px 2.27027px rgba(0, 0, 0, 0.12);
+  max-height: 240px;
+  text-align: center;
+  width: 100%;
+  flex: 1;
+}
+
+.card:active,
+.card:focus {
+  outline: none;
+}
+
+.imageContainer {
+  background-color: var(--color-california);
+  border-radius: 8px 8px 0 0;
+  box-sizing: border-box;
+  height: 131px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.imageContainer img {
+  max-width: 320px;
+  width: 100%;
+}
+
+.secondary {
+  background-color: var(--color-cardinal);
+}
+
+.content {
+  padding: 16px;
+}
+
+.content > :first-child {
+  margin: 0;
+}
