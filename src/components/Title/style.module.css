@@ -4,8 +4,14 @@
   font-family: 'Rubik', Arial, Helvetica, sans-serif;
 }
 
+.normal {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+
 .medium {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
 }
 
@@ -15,7 +21,7 @@
 }
 
 .large {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: normal;
 }
 
@@ -41,4 +47,12 @@
 
 .secondary {
   color: var(--color-jumbo);
+}
+
+.cardinal {
+  color: var(--color-cardinal)
+}
+
+.medium-1 {
+  font-size: 20px;
 }

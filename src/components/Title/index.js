@@ -31,11 +31,14 @@ Title.propTypes = {
     'right',
   ]),
   color: PropTypes.PropTypes.oneOf([
+    'cardinal',
     'primary',
     'secondary',
   ]),
   size: PropTypes.PropTypes.oneOf([
+    'medium-1',
     'medium',
+    'normal',
     'small',
     'large',
   ]),
