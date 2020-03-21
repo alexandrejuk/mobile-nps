@@ -1,22 +1,27 @@
 import React from 'react'
-import { render   } from '@testing-library/react'
+import {
+  fireEvent,
+  render,
+} from '@testing-library/react'
 
-import Modal from '.'
+import Confirm from '.'
 
 const MODAL_TEXT = 'I am a modal component!'
 describe('Modal component', () => {
   it('should render correctly', () => {
     const callback = jest.fn()
     const { container, getByText } = render(
-      <Modal
+      <Confirm
         show
+        close={callback}
       >
         {MODAL_TEXT}
-      </Modal>
+      </Confirm>
     )
-
-    getByText(MODAL_TEXT)
+    const SampleModal = getByText(MODAL_TEXT)
     expect(callback).not.toHaveBeenCalled()
+    fireEvent.click(SampleModal)
+    expect(callback).toHaveBeenCalled()
     expect(container).toMatchSnapshot()
   })
 })

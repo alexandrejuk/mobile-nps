@@ -4,28 +4,31 @@ import classNames from 'classnames'
 
 import styles from './style.module.css'
 
-const Modal = ({
+const Confirm = ({
   children,
+  close,
   show,
 }) => (
   <div
-    className={classNames(styles.bgModal, {
+    onClick={close}
+    className={classNames(styles.bgConfirm, {
       [styles.show]: show,
     })}
   >
-    <div
-      className={classNames(styles.modal, {
-        [styles.show]: show,
-      })}
-    >
+  <div
+    className={classNames(styles.confirm, {
+      [styles.show]: show,
+    })}
+  >
       {children}
     </div>
    </div>
 )
 
-Modal.propTypes = {
+Confirm.propTypes = {
   children: PropTypes.node.isRequired,
+  close: PropTypes.func.isRequired,
   show: PropTypes.bool.isRequired,
 }
 
-export default Modal
+export default Confirm
