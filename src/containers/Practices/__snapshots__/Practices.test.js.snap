@@ -6,29 +6,48 @@ exports[`Practices container should render correctly 1`] = `
     class="container"
   >
     <div
-      class="closeTools"
+      class="headerClose"
       role="button"
     >
       <img
-        alt="tool close"
+        alt="close practices"
         src="close.svg"
       />
     </div>
     <div
-      class="padding20"
+      class="header"
     >
       <h1
         class="primary medium center title bold"
       >
         Guia de boas práticas
       </h1>
-      <h1
-        class="secondary medium center title normal"
+      <div
+        class="progressPosition"
       >
-        Resumo dos Procedimentos para Auditoria TCP
-      </h1>
+        <div
+          class="percent"
+        >
+          <svg>
+            <circle
+              cx="8"
+              cy="8"
+              r="8"
+            />
+            <circle
+              cx="8"
+              cy="8"
+              data-value="25"
+              r="8"
+              style="stroke-dashoffset: 427.5;"
+            />
+          </svg>
+        </div>
+      </div>
     </div>
-    <div>
+    <div
+      class="content"
+    >
       <div
         class="image"
       >
@@ -37,29 +56,21 @@ exports[`Practices container should render correctly 1`] = `
           src="pt0.png"
         />
       </div>
-      <div
-        class="padding20"
+      <h1
+        class="secondary normal center title normal"
       >
-        <h1
-          class="secondary medium center title normal"
-        >
-          Material Básico: 5 Copos, 1 Par de luvas, Touca, Jarra, Pincel, Papel toalha, Balança e  Tabela de programação.
-        </h1>
-      </div>
+        Material Básico: 5 Copos, 1 Par de luvas, Touca, Jarra, Pincel, Papel toalha, Balança e  Tabela de programação.
+      </h1>
     </div>
     <div
-      class="stepButton"
+      class="footer"
     >
-      <div
-        class="firtButton"
+      <button
+        class="button primary null"
+        type="button"
       >
-        <button
-          class="button primary null"
-          type="button"
-        >
-          Start
-        </button>
-      </div>
+        Start
+      </button>
     </div>
   </div>
 </div>
