@@ -1,104 +1,71 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+
+import Translate from '../../locales'
 import {
-  Button,
-  Progress,
+  PracticeCard,
   Title,
 } from '../../components'
-import Translate from '../../locales'
 import styles from './style.module.css'
-import ImagesPractice from './images'
-import CloseSvg from '../../assets/icons/close.svg'
 
-const Practice = ({
-  close,
-  onStep,
-  onPrevStep,
-  practice,
-  progress,
-  step,
-  steps,
+import ArrowSvg from '../../assets/icons/arrow-left-white.svg'
+import BannerSvg from '../../assets/images/banners/banner-2.svg'
+
+const Practices = ({
+  goBack,
+  practices,
+  goToPractice
 }) => {
-  const {
-    title,
-    message,
+  const PracticeItem = ({
+    id,
     image,
-  } = practice
-
-  const ButtonText = (
-    step === 0
-      ? Translate('practices.start')
-      : Translate('practices.next')
+    title,
+    readTime,
+  }) => (
+    <PracticeCard
+      action={() => goToPractice(id)}
+      key={id}
+      image={image}
+      title={title}
+      readTime={readTime}
+    />
   )
 
   return (
     <div className={styles.container}>
-      <div
-        onClick={close}
-        role="button"
-        className={styles.headerClose}
-      >
-        <img src={CloseSvg} alt="close practices" />
-      </div>
       <div className={styles.header}>
-        <Title
-          type="bold"
-          text={title}
-          textAlign="center"
-        />
-        <div className={styles.progressPosition}>
-          <Progress
-            progress={progress}
-            setup={{
-              type: 'radial',
-              radial: {
-                cx: 8,
-                cy: 8,
-                r: 8,
-              },
-            }}
-          />
+        <div
+          onClick={goBack}
+          role="button"
+        >
+          <img src={ArrowSvg} alt="go back" />
         </div>
+        <img src={BannerSvg} alt="ilustration" />
       </div>
       <div className={styles.content}>
-        <div className={styles.image}>
-          <img src={ImagesPractice[image]} alt="good practices" />
-        </div>
         <Title
-          color="secondary"
-          text={message}
-          textAlign="center"
-          size="normal"
+          type="bold"
+          text={Translate('practices.title')}
         />
-      </div>
-      <div className={styles.footer}>
-        <Button color="primary" action={onStep}>
-          {step === steps ? Translate('practices.goToHome') : ButtonText}
-        </Button>
-        {
-          step > 0 && (
-            <Button color="outline" action={onPrevStep}>
-              {Translate('practices.previous')}
-            </Button>
-          )
-        }
+        <div className={styles.pratices}>
+          {practices.map(PracticeItem)}
+        </div>
       </div>
     </div>
   )
 }
 
-Practice.propTypes = {
-  close: PropTypes.func.isRequired,
-  onStep: PropTypes.func.isRequired,
-  onPrevStep: PropTypes.func.isRequired,
-  progress: PropTypes.number.isRequired,
-  practice: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    message: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-  }).isRequired,
-  step: PropTypes.number.isRequired,
-  steps: PropTypes.number.isRequired,
+Practices.propTypes = {
+  goBack: PropTypes.func.isRequired,
+  goToPractice: PropTypes.func.isRequired,
+  practices: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      image: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      readTime: PropTypes.string,
+    }).isRequired,
+  ).isRequired,
 }
 
-export default Practice
+export default Practices

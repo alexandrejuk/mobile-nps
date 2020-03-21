@@ -1,12 +1,11 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 
-import PracticesContainer from './'
+import PracticesContainer from '.'
 
 const goodPractices = [
   {
-    title: "Guia de boas práticas",
-    subtitle: "Resumo dos Procedimentos para Auditoria TCP",
+    title: "Resumo dos Procedimentos para Auditoria TCP",
     message: "Material Básico: 5 Copos, 1 Par de luvas, Touca, Jarra, Pincel, Papel toalha, Balança e  Tabela de programação.",
     image: 'PT0',
   },
@@ -17,7 +16,7 @@ const goodPractices = [
   },
 ]
 
-describe('Practices container', () => {
+describe('Practice container', () => {
   it('should render correctly', () => {
     const callback = jest.fn()
     const step = 0
