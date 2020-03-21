@@ -40,22 +40,22 @@ describe('Detail container', () => {
       <Detail
         goBack={callback}
         product={productMock}
+        issueSelected={{}}
+        showModal={false}
+        onOpenModal={callback}
+        onCloseModal={callback}
       />
     )
 
     const SampleEquimentCode = DetailContainer.getByText(productMock.name)
     const SampleImgSrc = DetailContainer.getByAltText('product')
-    const SampleDescription = DetailContainer.getByText('Description')
-    const SampleEquimentPotency = DetailContainer.getByText(`${productMock.potency} / ${productMock.tension}`)
-    const SampleTitleVoltage = DetailContainer.getByText('Potency / Tension')
-    const SampleTitleSize = DetailContainer.getByText('Dimension')
+    const SampleDescription = DetailContainer.getByText('Description of Problem')
+    const SampleEquimentPotency = DetailContainer.getByText(`${productMock.potency} | ${productMock.tension}`)
 
     expect(SampleDescription).toBeInTheDocument()
-    expect(SampleTitleSize).toBeInTheDocument()
-    expect(SampleEquimentPotency).toBeInTheDocument()
     expect(SampleImgSrc.getAttribute('src')).toEqual('m8-60.png')
     expect(SampleEquimentCode).toBeInTheDocument()
-    expect(SampleTitleVoltage).toBeInTheDocument()
+    expect(SampleEquimentPotency).toBeInTheDocument()
     expect(DetailContainer.container).toMatchSnapshot()
   })
 })
