@@ -15,21 +15,22 @@ const progressValue = (steps, step, type) => (
 )
 
 export const Default = () => {
+  const practices = goodPractices[0].practices
   const [step, setStep] = useState(0)
   const [progress, setProgress] = useState(
-    progressValue(goodPractices.length, step, 'increment')
+    progressValue(practices.length, step, 'increment')
   )
 
   const handleNext = () => {
-    const incrementProgress = progressValue(goodPractices.length, step, 'increment')
-    if(step < (goodPractices.length - 1)) {
+    const incrementProgress = progressValue(practices.length, step, 'increment')
+    if(step < (practices.length - 1)) {
       setProgress(incrementProgress)
       setStep(step + 1)
     }
   }
 
   const handlePrev =  () => {
-    const decrementProgress = progressValue(goodPractices.length, step, 'decrement')
+    const decrementProgress = progressValue(practices.length, step, 'decrement')
     if(step > 0) {
       setProgress(decrementProgress)
       setStep(step - 1)
@@ -37,7 +38,7 @@ export const Default = () => {
   }
 
   const actionNext = (
-    step === (goodPractices.length - 1)
+    step === (practices.length - 1)
     ? action('go to home!')
     : handleNext
   )
