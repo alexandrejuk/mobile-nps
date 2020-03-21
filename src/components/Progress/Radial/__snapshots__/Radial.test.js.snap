@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radial component should render correctly 1`] = `
+<div>
+  <div
+    class="percent"
+  >
+    <svg>
+      <circle
+        cx="8"
+        cy="8"
+        r="8"
+      />
+      <circle
+        cx="8"
+        cy="8"
+        data-value="25"
+        r="8"
+        style="stroke-dashoffset: 427.5;"
+      />
+    </svg>
+  </div>
+</div>
+`;
