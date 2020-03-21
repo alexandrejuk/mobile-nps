@@ -1,0 +1,25 @@
+@import '../../assets/css/colors.css';
+
+.banner {
+  background-color: var(--color-white);
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0px 2.27027px 2.27027px rgba(0, 0, 0, 0.24), 0px 0px 2.27027px rgba(0, 0, 0, 0.12);
+  height: 159px;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  padding: 15px;
+}
+
+.primary {
+  background-color: var(--color-california);
+}
+
+.secondary {
+  background-color: var(--color-cardinal);
+}
+
+.banner img {
+  height: 100%;
+}
