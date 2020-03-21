@@ -6,199 +6,205 @@ exports[`Detail container should render correctly 1`] = `
     class="container"
   >
     <div
-      class="header"
+      role="button"
     >
-      <div
-        class="icon"
-        role="button"
-      >
-        <img
-          alt="action go back"
-          src="arrow-left.svg"
-        />
-      </div>
-      <div
-        class="logo"
-      >
-        <img
-          alt="company logo"
-          src="logo.svg"
-        />
-      </div>
+      <img
+        alt="go back"
+        src="arrow-left.svg"
+      />
     </div>
     <div
-      class="product"
+      class="productImage"
     >
-      <h1
-        class="primary medium right title normal"
-      >
-        A6/30
-      </h1>
+      <img
+        alt="product"
+        src="m8-60.png"
+      />
+    </div>
+    <h1
+      class="primary large left title bold"
+    >
+      A6/30
+    </h1>
+    <h1
+      class="primary medium left title bold"
+    >
+      Description
+    </h1>
+    <h1
+      class="secondary normal left title normal"
+    >
+      Maquina de café premium, criada com o mais alto padrão de qualidade, lider de venda em mais de 2.000 mil países.
+    </h1>
+    <div
+      class="equipmentInfoContainer"
+    >
       <div
-        class="productImage"
+        class="equipmentInfo"
       >
         <img
-          alt="product"
-          src="m8-60.png"
+          alt="scale product"
+          src="scale-width.svg"
         />
-      </div>
-      <div
-        class="productContent"
-      >
         <h1
-          class="primary medium left title normal"
+          class="cardinal small center title bold"
         >
-          Description
+          W 330
         </h1>
-        <div
-          class="productInfo"
+      </div>
+      <div
+        class="equipmentInfo"
+      >
+        <img
+          alt="scale product"
+          src="scale-height.svg"
+        />
+        <h1
+          class="cardinal small center title bold"
         >
-          <div
-            class="descriptionText"
-          >
-            <h1
-              class="primary small left title normal"
-            >
-              Maquina de café premium, criada com o mais alto padrão de qualidade, lider de venda em mais de 2.000 mil países.
-            </h1>
-          </div>
-          <div
-            class="productInfoSection"
-          >
-            <h1
-              class="primary small left title normal"
-            >
-              Dimension
-            </h1>
-            <h1
-              class="primary small left title bold"
-            >
-              H: 100 x W: 330 x D: 2400
-            </h1>
-          </div>
-          <div
-            class="equipmentTechnical"
-          >
-            <div
-              class="productInfoSection"
-            >
-              <h1
-                class="primary small left title normal"
-              >
-                Potency / Tension
-              </h1>
-              <h1
-                class="primary small left title bold"
-              >
-                220v~ / 1600w
-              </h1>
-            </div>
-            <div
-              class="productInfoSection"
-            >
-              <h1
-                class="primary small left title normal"
-              >
-                Weight
-              </h1>
-              <h1
-                class="primary small left title bold"
-              >
-                1.2
-              </h1>
-            </div>
-          </div>
-        </div>
+          H 100
+        </h1>
+      </div>
+      <div
+        class="equipmentInfo"
+      >
+        <img
+          alt="scale product"
+          src="scale-deep.svg"
+        />
+        <h1
+          class="cardinal small center title bold"
+        >
+          D 2400
+        </h1>
+      </div>
+      <div
+        class="equipmentInfo"
+      >
+        <img
+          alt="volts product"
+          src="volts.svg"
+        />
+        <h1
+          class="cardinal small center title bold"
+        >
+          220v~ | 1600w
+        </h1>
+      </div>
+      <div
+        class="equipmentInfo"
+      >
+        <img
+          alt="weight product"
+          src="weight.svg"
+        />
+        <h1
+          class="cardinal small center title bold"
+        >
+          1.2
+        </h1>
       </div>
     </div>
     <div
-      class="productRevenue"
+      class="revenuesTitle"
     >
       <h1
-        class="primary medium left title normal"
+        class="primary medium left title bold"
       >
         Revenues
       </h1>
     </div>
     <div
-      class="productRevenueDocumet"
+      class="revenuesContainer"
     >
       <div
-        class="revenueGallery"
+        class="revenueItem"
       >
-        <div
-          class="revenueItem"
+        <button
+          class="button outline small"
+          type="button"
         >
-          <h1
-            class="primary small left title bold"
-          >
-            Cod: AL
-          </h1>
-          <div
-            class="revenuesAvatar"
-          >
-            <img
-              alt="revenue gallery"
-            />
-          </div>
-        </div>
+          AL
+        </button>
       </div>
     </div>
     <div
-      class="productIssue"
+      class="issuesTitle"
+    >
+      <h1
+        class="primary medium left title bold"
+      >
+        Errors
+      </h1>
+    </div>
+    <div
+      class="issuesContainer"
     >
       <div
-        class="productIssueTitle"
+        class="issueItem"
       >
-        <h1
-          class="primary medium left title normal"
+        <button
+          class="button secondary xsmall"
+          type="button"
         >
-          Errors
-        </h1>
+          off 0
+        </button>
       </div>
+    </div>
+    <div
+      class="bgModal"
+    >
       <div
-        class="collapse"
-        style="height: 65px;"
+        class="modal"
       >
         <div
-          class="collapseHeader"
-          role="button"
-          tabindex="0"
+          class="headerModalIssue"
         >
-          <h1
-            class="primary medium left title normal"
-          >
-            off 0
-          </h1>
           <div
-            class="icon"
+            class="headerModalItem"
+            role="button"
           >
             <img
-              alt="arrow"
-              src="arrow-up.svg"
+              alt="close modal"
+              src="close.svg"
+            />
+          </div>
+          <div
+            class="headerModalItem"
+          >
+            <h1
+              class="primary medium-1 center title normal"
             />
           </div>
         </div>
         <div
-          class="collapseBody"
+          class="modalContentIssue"
         >
           <div
-            class="issueSection"
+            class="issueModalContent"
           >
-            <h1
-              class="primary small left title bold"
+            <div
+              class="issueModalTitle"
             >
-              Problem
-            </h1>
+              <h1
+                class="primary large left title normal"
+              >
+                Description of Problem
+              </h1>
+            </div>
           </div>
           <div
-            class="issueSection"
+            class="issueModalContent"
           >
-            <h1
-              class="primary small left title bold"
+            <div
+              class="issueModalTitle"
             >
-              Solution
-            </h1>
+              <h1
+                class="primary large left title normal"
+              >
+                Solution
+              </h1>
+            </div>
           </div>
         </div>
       </div>

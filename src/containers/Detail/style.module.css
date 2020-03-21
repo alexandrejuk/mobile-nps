@@ -1,7 +1,11 @@
 @import '../../assets/css/colors.css';
 
 .container {
-  background-color: var(--color-concrete);
+  background-color: var(--color-white);
+}
+
+.fixed {
+  position: fixed;
 }
 
 .product {
@@ -12,8 +16,9 @@
 }
 
 .productImage {
-  height: 229px;
+  height: 210px;
   margin: auto;
+  text-align: center;
   width: 215px;
 }
 
@@ -71,12 +76,6 @@
   text-align: center;
 }
 
-.revenueItem {
-  flex: 1;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
 .descriptionText {
   text-align: justify;
   width: 100%;
@@ -85,4 +84,56 @@
 .equipmentTechnical {
   display: flex;
   justify-content: space-between;
+}
+
+.equipmentInfo {
+  margin: 10px 0;
+  margin-right: 10px;
+  text-align: center;
+  width: calc((100% - 30px) / 3);
+}
+
+.issuesContainer,
+.revenuesContainer,
+.equipmentInfoContainer {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.issueItem {
+  box-sizing: border-box;
+  margin: 8px 0;
+  margin-right: 10px;
+  width: calc((100% - 50px) / 5);
+}
+
+.revenueItem {
+  box-sizing: border-box;
+  margin: 8px 0;
+  margin-right: 10px;
+  width: calc((100% - 30px) / 3);
+}
+
+.revenuesTitle,
+.issuesTitle {
+  margin: 40px 0 15px 0;
+}
+
+.issueModalContent {
+  margin-top: 35px;
+}
+
+.issueModalTitle {
+  margin-bottom: 35px;
+}
+
+.headerModalIssue {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.headerModalItem {
+  width: calc(100% / 3);
 }
