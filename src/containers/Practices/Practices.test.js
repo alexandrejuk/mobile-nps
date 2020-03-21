@@ -1,8 +1,5 @@
 import React from 'react'
-import {
-  fireEvent,
-  render,
-} from '@testing-library/react'
+import { render } from '@testing-library/react'
 
 import PracticesContainer from './'
 
@@ -32,6 +29,7 @@ describe('Practices container', () => {
         step={step}
         steps={(goodPractices.length - 1)}
         practice={goodPractices[step]}
+        progress={25}
       />
     )
 
