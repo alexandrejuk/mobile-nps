@@ -25,8 +25,6 @@ const Practice = ({
     progressValue(practices.length, step, 'increment')
   )
 
-  const goBack = () => history.push('/logged/equipments')
-
   const handleNext = () => {
     const incrementProgress = progressValue(practices.length, step, 'increment')
     if(step < (practices.length - 1)) {
@@ -45,13 +43,13 @@ const Practice = ({
 
   const actionNext = (
     step === (practices.length - 1)
-    ? goBack
+    ? history.goBack
     : handleNext
   )
 
   return (
     <PracticeContainer
-      close={goBack}
+      close={history.goBack}
       onStep={actionNext}
       onPrevStep={handlePrev}
       practice={practices[step]}
@@ -64,7 +62,7 @@ const Practice = ({
 
 Practice.propTypes = {
   history: PropTypes.shape({
-    push: PropTypes.func.isRequired,
+    goBack: PropTypes.func.isRequired,
   }).isRequired,
   match: PropTypes.shape({
     params: PropTypes.shape({
