@@ -9,7 +9,7 @@ const en = {
     deep: 'D',
     errors: 'Errors',
     height: 'H',
-    problem: 'Problem',
+    problem: 'Description of Problem',
     potencyTension: 'Potency / Tension',
     solution: 'Solution',
     revenues: 'Revenues',
