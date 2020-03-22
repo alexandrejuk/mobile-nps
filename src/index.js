@@ -7,7 +7,7 @@ import './index.css'
 import Routes from './routes'
 import * as serviceWorker from './serviceWorker'
 
-ReactGA.initialize('UA-160310065-1')
+ReactGA.initialize(process.env.REACT_APP_GA)
 
 ReactDOM.render(
   <HashRouter>
