@@ -6,10 +6,10 @@ const pt = {
   detail: {
     dimension: 'Dimensões',
     description: 'Descrição',
-    deep: 'P',
+    deep: 'p',
     errors: 'Erros',
     height: 'A',
-    problem: 'Descrição do problema',
+    problem: 'Problema',
     potencyTension: 'Potência / Tensão',
     solution: 'Solução',
     revenues: 'Receitas',
