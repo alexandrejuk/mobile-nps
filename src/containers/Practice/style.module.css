@@ -9,20 +9,19 @@
   min-height: 80vh;
 }
 
-.headerPractice {
+.header {
   display: flex;
   margin: auto;
   padding: 20px 0;
 }
 
-.headerPractice > :first-child{
+.header > :first-child{
   margin: 0;
   min-height: 40px;
   width: calc((100vh - 40px) / 2);
-  max-width: 300px;
 }
 
-.headerPractice > :last-child{
+.header > :last-child{
   min-height: 40px;
 }
 
