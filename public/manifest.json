@@ -1,8 +1,8 @@
 {
   "name": "Nestle technical App",
   "short_name": "Nestle technical",
-  "theme_color": "#AC1637",
-  "background_color": "#AC1637",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait",
   "Scope": "/",

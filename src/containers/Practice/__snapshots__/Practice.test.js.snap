@@ -15,7 +15,7 @@ exports[`Practice container should render correctly 1`] = `
       />
     </div>
     <div
-      class="headerPractice"
+      class="header"
     >
       <h1
         class="primary medium center title bold"
