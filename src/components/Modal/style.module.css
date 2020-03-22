@@ -10,30 +10,30 @@
   flex-direction: column;
   justify-content: center;
   left: 0;
+  opacity: 0;
+  padding: 20px;
   position: fixed;
   right: 0;
   top: 0;
   transition: all 0.5s ease-out;
   visibility: hidden;
   z-index: 1;
-  overflow: auto;
-  opacity: 0;
 }
 
 .modal {
   background-color: var(--color-white);
-  box-shadow: 0 0 10px rgba(0,0,0,.2);
-  height: 150%;
-  width: 100%;
-  padding: 20px;
+  border-radius: 3px;
   box-sizing: border-box;
-  transform: translateY(840px);
-  overflow: auto;
+  font-size: 14px;
+  max-width: 768px;
+  padding: 20px;
+  transform: translateY(-840px);
+  transition: transform 0.5s ease 0s;
+  width: 100%;
 }
 
 .show {
-  transform: translateY(0px);
-  transition: transform 0.5s ease 0s;
+  transform: translateY(0);
 }
 
 .bgModal.show {
