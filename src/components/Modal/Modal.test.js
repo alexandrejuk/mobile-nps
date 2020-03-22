@@ -1,7 +1,10 @@
 import React from 'react'
-import { render   } from '@testing-library/react'
+import {
+  fireEvent,
+  render,
+} from '@testing-library/react'
 
-import Modal from '.'
+import Modal from './'
 
 const MODAL_TEXT = 'I am a modal component!'
 describe('Modal component', () => {
@@ -10,13 +13,15 @@ describe('Modal component', () => {
     const { container, getByText } = render(
       <Modal
         show
+        close={callback}
       >
         {MODAL_TEXT}
       </Modal>
     )
-
-    getByText(MODAL_TEXT)
+    const SampleModal = getByText(MODAL_TEXT)
     expect(callback).not.toHaveBeenCalled()
+    fireEvent.click(SampleModal)
+    expect(callback).toHaveBeenCalled()
     expect(container).toMatchSnapshot()
   })
 })
