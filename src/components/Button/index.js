@@ -8,7 +8,6 @@ const Button = ({
   action,
   children,
   color,
-  size,
   type,
 }) => (
   <button
@@ -16,7 +15,6 @@ const Button = ({
     className={classNames(
       styles.button,
       styles[color],
-      styles[size],
     )}
     type={type}
   >
@@ -30,18 +28,12 @@ Button.propTypes = {
   color: PropTypes.oneOf([
     'outline',
     'primary',
-    'secondary',
   ]).isRequired,
-  size: PropTypes.oneOf([
-    'xsmall',
-    'small',
-  ]),
   type: PropTypes.string,
 }
 
 Button.defaultProps = {
   action: null,
-  size: null,
   type: 'button',
 }
 
