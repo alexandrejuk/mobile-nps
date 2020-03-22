@@ -19,7 +19,7 @@ exports[`Card component should render correctly 1`] = `
       class="title"
     >
       <h1
-        class="primary medium center title bold"
+        class="primary medium center title normal"
       >
         A8/60
       </h1>
