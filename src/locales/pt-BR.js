@@ -16,6 +16,11 @@ const pt = {
     width: 'L',
     weight: 'Peso',
   },
+  home: {
+    title: 'Apreenda mais',
+    equipmentButton: 'Equipamentos',
+    goodPracticesButton: 'Boas Práticas',
+  },
   practice: {
     start: 'Iniciar',
     next: 'Próximo',
