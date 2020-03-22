@@ -6,48 +6,29 @@ exports[`Practices container should render correctly 1`] = `
     class="container"
   >
     <div
-      class="headerClose"
+      class="closeTools"
       role="button"
     >
       <img
-        alt="close practices"
+        alt="tool close"
         src="close.svg"
       />
     </div>
     <div
-      class="header"
+      class="padding20"
     >
       <h1
         class="primary medium center title bold"
       >
         Guia de boas práticas
       </h1>
-      <div
-        class="progressPosition"
+      <h1
+        class="secondary medium center title normal"
       >
-        <div
-          class="percent"
-        >
-          <svg>
-            <circle
-              cx="8"
-              cy="8"
-              r="8"
-            />
-            <circle
-              cx="8"
-              cy="8"
-              data-value="25"
-              r="8"
-              style="stroke-dashoffset: 427.5;"
-            />
-          </svg>
-        </div>
-      </div>
+        Resumo dos Procedimentos para Auditoria TCP
+      </h1>
     </div>
-    <div
-      class="content"
-    >
+    <div>
       <div
         class="image"
       >
@@ -56,21 +37,29 @@ exports[`Practices container should render correctly 1`] = `
           src="pt0.png"
         />
       </div>
-      <h1
-        class="secondary normal center title normal"
+      <div
+        class="padding20"
       >
-        Material Básico: 5 Copos, 1 Par de luvas, Touca, Jarra, Pincel, Papel toalha, Balança e  Tabela de programação.
-      </h1>
+        <h1
+          class="secondary medium center title normal"
+        >
+          Material Básico: 5 Copos, 1 Par de luvas, Touca, Jarra, Pincel, Papel toalha, Balança e  Tabela de programação.
+        </h1>
+      </div>
     </div>
     <div
-      class="footer"
+      class="stepButton"
     >
-      <button
-        class="button primary null"
-        type="button"
+      <div
+        class="firtButton"
       >
-        Start
-      </button>
+        <button
+          class="button primary null"
+          type="button"
+        >
+          Start
+        </button>
+      </div>
     </div>
   </div>
 </div>
