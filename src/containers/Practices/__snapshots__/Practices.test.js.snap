@@ -54,7 +54,7 @@ exports[`Practices container should render correctly 1`] = `
         class="firtButton"
       >
         <button
-          class="button primary null"
+          class="button primary"
           type="button"
         >
           Start

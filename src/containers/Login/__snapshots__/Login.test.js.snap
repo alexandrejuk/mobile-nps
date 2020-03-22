@@ -33,7 +33,7 @@ exports[`Login container should render correctly 1`] = `
           class="buttonForm"
         >
           <button
-            class="button primary null"
+            class="button primary"
             type="submit"
           >
             Sign Up
