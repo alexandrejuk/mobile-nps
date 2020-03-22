@@ -23,8 +23,6 @@ const Card = ({
       <Title
         text={title}
         textAlign="center"
-        type="bold"
-        size="medium"
       />
     </div>
    </div>
