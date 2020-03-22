@@ -33,31 +33,35 @@ exports[`Practices container should render correctly 1`] = `
         class="pratices"
       >
         <div
-          class="card"
-          role="button"
-          tabindex="0"
+          class="practiceItem"
         >
           <div
-            class="imageContainer"
+            class="card"
+            role="button"
+            tabindex="0"
           >
-            <img
-              alt="item card"
-              src="banner-3.svg"
-            />
-          </div>
-          <div
-            class="content"
-          >
-            <h1
-              class="primary medium left title bold"
+            <div
+              class="imageContainer primary"
             >
-              Resumo dos Procedimentos para Auditoria TCP
-            </h1>
-            <h1
-              class="secondary small right title mediumBold"
+              <img
+                alt="item card"
+                src="banner-3.svg"
+              />
+            </div>
+            <div
+              class="content"
             >
-              5-6 minutos de leitura
-            </h1>
+              <h1
+                class="primary medium left title bold"
+              >
+                Resumo dos Procedimentos para Auditoria TCP
+              </h1>
+              <h1
+                class="secondary small right title mediumBold"
+              >
+                5-6 minutos de leitura
+              </h1>
+            </div>
           </div>
         </div>
       </div>
