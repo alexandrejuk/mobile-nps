@@ -1,7 +1,7 @@
 const en = {
   login: {
     accessCode: 'Access code',
-    buttonTitle: 'Sign Up',
+    buttonTitle: 'Log in',
   },
   detail: {
     dimension: 'Dimension',
@@ -26,6 +26,7 @@ const en = {
     next: 'Next',
     previous: 'Previous',
     goToHome: 'Go to home',
+    close: 'Close',
   },
   practices: {
     title: 'Read more',
