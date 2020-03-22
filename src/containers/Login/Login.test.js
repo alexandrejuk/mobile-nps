@@ -18,7 +18,7 @@ describe('Login container', () => {
       />
     )
 
-    const SampleButton = LoginContainer.getByText('Sign Up')
+    const SampleButton = LoginContainer.getByText('Log in')
 
     expect(callback).not.toHaveBeenCalled()
     fireEvent.click(SampleButton)
