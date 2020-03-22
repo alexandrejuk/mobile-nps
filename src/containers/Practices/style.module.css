@@ -1,20 +1,56 @@
 @import '../../assets/css/colors.css';
 
-.header {
-  background-color: var(--color-cardinal);
+.container {
   padding: 20px;
-  overflow: hidden;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 80vh;
 }
 
-.header img {
-  max-width: 280px;
-}
-
-.content {
-  overflow: hidden;
+.header {
+  align-items: center;
+  display: flex;
   padding: 20px 0;
 }
 
-.pratices {
+.header > :first-child{
+  margin: 0;
+  min-height: 40px;
+  width: calc((100vh - 40px) / 2);
+}
+
+.header > :last-child{
+  min-height: 40px;
+}
+
+.headerClose {
+  width: 100%;
+}
+
+.content {
   padding-top: 20px;
+  min-height: 320px;
+}
+
+.image {
+  height: 200px;
+  min-width: calc(310px - 40px);
+  overflow: hidden;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.image img {
+  width: auto;
+  height: 100%;
+}
+
+.footer {
+  min-height: 120px;
+}
+
+.footer > * {
+  margin-top: 15px;
 }
