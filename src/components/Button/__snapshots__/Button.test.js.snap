@@ -3,7 +3,7 @@
 exports[`Button component should render correctly outline button 1`] = `
 <div>
   <button
-    class="button outline null"
+    class="button outline"
     type="button"
   >
     Button component
@@ -14,84 +14,7 @@ exports[`Button component should render correctly outline button 1`] = `
 exports[`Button component should render correctly primary button 1`] = `
 <div>
   <button
-    class="button primary null"
-    type="button"
-  >
-    Button component
-  </button>
-</div>
-`;
-
-exports[`Button component should render correctly secondary button 1`] = `
-<div>
-  <button
-    class="button secondary null"
-    type="button"
-  >
-    Button component
-  </button>
-</div>
-`;
-
-exports[`Button component should render correctly small outline button 1`] = `
-<div>
-  <button
-    class="button outline small"
-    type="button"
-  >
-    Button component
-  </button>
-</div>
-`;
-
-exports[`Button component should render correctly small primary button 1`] = `
-<div>
-  <button
-    class="button primary small"
-    type="button"
-  >
-    Button component
-  </button>
-</div>
-`;
-
-exports[`Button component should render correctly small secondary button 1`] = `
-<div>
-  <button
-    class="button secondary small"
-    type="button"
-  >
-    Button component
-  </button>
-</div>
-`;
-
-exports[`Button component should render correctly xsmall outline button 1`] = `
-<div>
-  <button
-    class="button outline xsmall"
-    type="button"
-  >
-    Button component
-  </button>
-</div>
-`;
-
-exports[`Button component should render correctly xsmall primary button 1`] = `
-<div>
-  <button
-    class="button primary xsmall"
-    type="button"
-  >
-    Button component
-  </button>
-</div>
-`;
-
-exports[`Button component should render correctly xsmall secondary button 1`] = `
-<div>
-  <button
-    class="button secondary xsmall"
+    class="button primary"
     type="button"
   >
     Button component
