@@ -16,6 +16,11 @@ const en = {
     width: 'W',
     weight: 'Weight',
   },
+  home: {
+    title: 'Read more',
+    equipmentButton: 'Equipments',
+    goodPracticesButton: 'Practices Guide',
+  },
   practice: {
     start: 'Start',
     next: 'Next',

@@ -40,7 +40,7 @@ const Practice = ({
       >
         <img src={CloseSvg} alt="close practices" />
       </div>
-      <div className={styles.header}>
+      <div className={styles.headerPractice}>
         <Title
           type="bold"
           text={title}
