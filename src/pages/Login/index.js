@@ -19,7 +19,7 @@ const Login = ({
     const { code_access } = codeAccess
     if (access === Number(code_access)) {
       localStorage.setItem('code_access', code_access)
-      return history.push('/logged/equipments')
+      return history.push('/logged/home')
     }
     return null
   }
