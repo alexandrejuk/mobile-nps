@@ -26,6 +26,7 @@ const pt = {
     next: 'Próximo',
     previous: 'Voltar',
     goToHome: 'Ir para home',
+    close: 'Fechar',
   },
   practices: {
     title: 'Apreenda mais',

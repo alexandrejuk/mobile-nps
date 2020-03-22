@@ -73,7 +73,7 @@ const Practice = ({
       </div>
       <div className={styles.footer}>
         <Button color="primary" action={onStep}>
-          {step === steps ? Translate('practice.goToHome') : ButtonText}
+          {step === steps ? Translate('practice.close') : ButtonText}
         </Button>
         {
           step > 0 && (
