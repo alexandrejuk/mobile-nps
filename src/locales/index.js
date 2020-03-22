@@ -21,7 +21,7 @@ const setLanguageToI18n = () => {
 
   iHaveThisLanguage
     ? I18n.locale = translateNormalize
-    : I18n.defaultLocale = 'pt'
+    : I18n.defaultLocale = 'en'
 }
 
 setLanguageToI18n()
