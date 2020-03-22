@@ -5,7 +5,6 @@ import Header from './Header'
 import Input from './Input'
 import Confirm from './Confirm'
 import Modal from './Modal'
-import PracticeCard from './PracticeCard'
 import Progress from './Progress'
 import Title from './Title'
 
@@ -17,7 +16,6 @@ export {
   Header,
   Input,
   Modal,
-  PracticeCard,
   Progress,
   Title,
 }

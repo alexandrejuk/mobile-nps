@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Practice container should render correctly 1`] = `
+exports[`Practices container should render correctly 1`] = `
 <div>
   <div
     class="container"
@@ -20,7 +20,7 @@ exports[`Practice container should render correctly 1`] = `
       <h1
         class="primary medium center title bold"
       >
-        Resumo dos Procedimentos para Auditoria TCP
+        Guia de boas práticas
       </h1>
       <div
         class="progressPosition"

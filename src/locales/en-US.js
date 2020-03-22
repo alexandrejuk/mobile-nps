@@ -16,14 +16,11 @@ const en = {
     width: 'W',
     weight: 'Weight',
   },
-  practice: {
+  practices: {
     start: 'Start',
     next: 'Next',
     previous: 'Previous',
     goToHome: 'Go to home',
-  },
-  practices: {
-    title: 'Read more',
   },
 }
 

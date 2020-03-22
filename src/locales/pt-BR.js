@@ -16,14 +16,11 @@ const pt = {
     width: 'L',
     weight: 'Peso',
   },
-  practice: {
+  practices: {
     start: 'Iniciar',
     next: 'Próximo',
     previous: 'Voltar',
     goToHome: 'Ir para home',
-  },
-  practices: {
-    title: 'Apreenda mais',
   },
 }
 

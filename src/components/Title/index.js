@@ -46,7 +46,6 @@ Title.propTypes = {
   type: PropTypes.oneOf([
     'bold',
     'normal',
-    'mediumBold',
   ]),
 }
 
