@@ -25,6 +25,7 @@
 }
 
 .imageContainer img {
+  max-height: 131px;
   max-width: 320px;
   width: 100%;
 }
@@ -35,6 +36,7 @@
 
 .content {
   padding: 16px;
+  min-height: 42px;
 }
 
 .content > :first-child {

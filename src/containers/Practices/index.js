@@ -21,14 +21,20 @@ const Practices = ({
     image,
     title,
     readTime,
+    color,
   }) => (
-    <PracticeCard
-      action={() => goToPractice(id)}
+    <div
+      className={styles.practiceItem}
       key={id}
-      image={image}
-      title={title}
-      readTime={readTime}
-    />
+    >
+      <PracticeCard
+        action={() => goToPractice(id)}
+        fill={color}
+        image={image}
+        title={title}
+        readTime={readTime}
+      />
+    </div>
   )
 
   return (

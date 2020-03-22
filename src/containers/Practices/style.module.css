@@ -18,3 +18,7 @@
 .pratices {
   padding-top: 20px;
 }
+
+.practiceItem:not(:last-child) {
+  padding-bottom: 16px;
+}
