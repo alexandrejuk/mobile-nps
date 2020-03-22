@@ -1,56 +1,42 @@
 @import '../../assets/css/colors.css';
 
 .container {
-  padding: 20px;
+  padding: 40px 0;
   background-color: var(--color-white);
+  min-height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 80vh;
-}
-
-.header {
-  align-items: center;
-  display: flex;
-  padding: 20px 0;
-}
-
-.header > :first-child{
-  margin: 0;
-  min-height: 40px;
-  width: calc((100vh - 40px) / 2);
-}
-
-.header > :last-child{
-  min-height: 40px;
-}
-
-.headerClose {
-  width: 100%;
-}
-
-.content {
-  padding-top: 20px;
-  min-height: 320px;
 }
 
 .image {
-  height: 200px;
-  min-width: calc(310px - 40px);
+  margin: 20px auto;
   overflow: hidden;
-  padding-bottom: 25px;
   text-align: center;
 }
 
 .image img {
-  width: auto;
   height: 100%;
 }
 
-.footer {
-  min-height: 120px;
+.stepButton {
+  padding: 40px 20px 0 20px;
 }
 
-.footer > * {
-  margin-top: 15px;
+.stepButton:first-child {
+  margin-bottom: 20px;
+}
+
+.firtButton {
+  margin-bottom: 20px;
+}
+
+.padding20 {
+  padding: 0 20px;
+}
+
+.closeTools {
+  width: 100%;
+  text-align: right;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
