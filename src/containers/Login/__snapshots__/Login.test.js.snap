@@ -10,7 +10,7 @@ exports[`Login container should render correctly 1`] = `
     >
       <img
         alt="company logo"
-        src="logo.svg"
+        src="logo-white.svg"
       />
     </div>
     <div

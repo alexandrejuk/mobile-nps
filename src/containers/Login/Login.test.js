@@ -27,7 +27,7 @@ describe('Login container', () => {
       LoginContainer
         .getByAltText('company logo')
         .getAttribute('src')
-    ).toEqual('logo.svg')
+    ).toEqual('logo-white.svg')
     expect(LoginContainer.getByText('Access code')).toBeInTheDocument()
     expect(LoginContainer.container).toMatchSnapshot()
   })

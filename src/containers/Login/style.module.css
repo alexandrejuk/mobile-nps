@@ -1,11 +1,7 @@
 @import '../../assets/css/colors.css';
 
 .container {
-  background-image: url('./bg.png');
   background-color: var(--color-cardinal);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   min-height: calc(100vh - 40px);
   padding: 20px;
 }
