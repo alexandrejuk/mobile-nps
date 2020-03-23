@@ -1,39 +1,35 @@
 @import '../../assets/css/colors.css';
 
 .container {
-  background-color: var(--color-concrete);
-  padding: 10px;
+  padding: 16px;
   min-height: calc(100vh - 20px);
 }
 
-.logo {
-  margin: auto;
-  height: 86px;
-  width: 180px;
-  padding-bottom: 30px;
+.header {
+  align-items: center;
+  display: flex;
 }
 
-.logo img {
-  height: 100%;
+.title {
+  flex: 1;
+}
+
+.banner {
+  padding: 40px 0;
 }
 
 .equipmentItem {
-  margin: 3px;
+  margin: 5px;
+  width: calc((100vw - 52px) / 2);
 }
 
 .equipments {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 14px;
 }
 
-.tools {
-  width: 100%;
-  text-align: right;
-}
-
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 768px) {
   .equipmentItem {
-    margin-bottom: 5px;
+    width: calc((100vw - 80px) / 4);
   }
 }

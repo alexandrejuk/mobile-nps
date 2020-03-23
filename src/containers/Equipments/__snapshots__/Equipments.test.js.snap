@@ -6,21 +6,37 @@ exports[`Equipments container should render correctly 1`] = `
     class="container"
   >
     <div
-      class="tools"
-      role="button"
+      class="header"
     >
-      <img
-        alt="tool help"
-        src="help.svg"
-      />
+      <div
+        role="button"
+      >
+        <img
+          alt="go back"
+          src="arrow-left.svg"
+        />
+      </div>
+      <div
+        class="title"
+      >
+        <h1
+          class="primary medium center title bold"
+        >
+          Equipments
+        </h1>
+      </div>
     </div>
     <div
-      class="logo"
+      class="banner"
     >
-      <img
-        alt="company logo"
-        src="logo.svg"
-      />
+      <div
+        class="banner primary"
+      >
+        <img
+          alt="banner information"
+          src="banner-1.svg"
+        />
+      </div>
     </div>
     <div
       class="equipments"
