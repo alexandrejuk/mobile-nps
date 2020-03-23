@@ -43,11 +43,10 @@ describe('Equipments container', () => {
       <Equipments
         action={callback}
         equipments={productsMock}
-        practicesAction={callback}
+        goBack={callback}
       />
     )
 
-    const banner = await EquipmentsContainer.findAllByAltText("banner")
     const imageItems = await EquipmentsContainer.findAllByAltText("item card")
     const imagesSrc = imageItems.map(image => image.getAttribute("src"))
 
@@ -61,9 +60,7 @@ describe('Equipments container', () => {
     fireEvent.click(SampleEquipment)
     expect(callback).toHaveBeenCalled()
 
-    expect(banner.getAttribute("src")).toEqual("banner-1.svg")
     expect(imagesSrc).toEqual(productsMock.map(() => `m8-60.png`))
-    expect(headingItems).toEqual(productsMock.map(({ name }) => name))
     expect(EquipmentsContainer.container).toMatchSnapshot()
   })
 })

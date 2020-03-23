@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { Card, Banner, Title } from '../../components'
 import styles from './style.module.css'
-import helpSVG from '../../assets/icons/help.svg'
+import ArrowSvg from '../../assets/icons/arrow-left.svg'
 
 import {
   imagesProduct,
@@ -13,22 +13,27 @@ import Translate from '../../locales'
 const Equipments = ({
   action,
   equipments = [],
-  practicesAction,
+  goBack,
 }) => {
   return (
     <div className={styles.container}>
-        <Title 
-          type="bold"
-          text={Translate('equipments.title')}
-          textAlign="center"
-        />
+      <div className={styles.header}>
+        <div
+          onClick={goBack}
+          role="button"
+        >
+          <img src={ArrowSvg} alt="go back" />
+        </div>
+        <div className={styles.title}>
+          <Title
+            type="bold"
+            text={Translate('equipments.title')}
+            textAlign="center"
+          />
+        </div>
+      </div>
+      <div className={styles.banner}>
         <Banner fill="primary" />
-      <div
-        className={styles.tools}
-        onClick={practicesAction}
-        role="button"
-      >
-        <img src={helpSVG} alt="tool help" />
       </div>
       <div className={styles.equipments}>
         {equipments.map(({
@@ -61,7 +66,7 @@ Equipments.propTypes = {
       name: PropTypes.string.isRequired,
     }).isRequired,
   ).isRequired,
-  practicesAction: PropTypes.func.isRequired,
+  goBack: PropTypes.func.isRequired,
 }
 
 export default Equipments
