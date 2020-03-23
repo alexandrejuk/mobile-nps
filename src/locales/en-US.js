@@ -26,7 +26,10 @@ const en = {
       confirm: 'Yes',
     },
   },
-  practice: {
+  equipments: {
+    title:'Equipments',
+  },
+  practices: {
     start: 'Start',
     next: 'Next',
     previous: 'Previous',
