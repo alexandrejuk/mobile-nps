@@ -29,7 +29,7 @@ const en = {
   equipments: {
     title:'Equipments',
   },
-  practices: {
+  practice: {
     start: 'Start',
     next: 'Next',
     previous: 'Previous',

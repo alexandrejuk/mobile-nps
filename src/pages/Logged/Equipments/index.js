@@ -11,12 +11,12 @@ const Equipments = ({
 }) => {
   GAInitialize('/logged/equipments')
   const goToDetail = id => history.push(`/logged/detail/${id}`)
-  const practicesAction = () => history.push(`/logged/practices`)
+
   return (
     <EquipmentsContainer
       action={goToDetail}
       equipments={EquipmentsMock}
-      practicesAction={practicesAction}
+      goBack={history.goBack}
     />
   )
 }
@@ -24,6 +24,7 @@ const Equipments = ({
 Equipments.propTypes = {
   history: PropTypes.shape({
     push: PropTypes.func.isRequired,
+    goBack: PropTypes.func.isRequired,
   }).isRequired,
 }
 
