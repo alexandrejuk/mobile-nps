@@ -233,25 +233,25 @@ const goodPractices = [
       },
     ]
   },
-  {
-    id: 2,
-    image: 'BannerSvg5',
-    title: 'Coronavírus medidas de prevenção',
-    readTime: '',
-    color: 'secondary',
-    practices: [
-      {
-        title: 'Lave as mãos',
-        message: 'Lave bem as mãos, e utilize alcool gel.',
-        image: 'PT44',
-      },
-      {
-        title: 'Cuidados',
-        message: 'Evite levar as mãos aos olhos e boca.',
-        image: 'PT44',
-      },
-    ],
-  },
+  // {
+  //   id: 2,
+  //   image: 'BannerSvg5',
+  //   title: 'Coronavírus medidas de prevenção',
+  //   readTime: '',
+  //   color: 'secondary',
+  //   practices: [
+  //     {
+  //       title: 'Lave as mãos',
+  //       message: 'Lave bem as mãos, e utilize alcool gel.',
+  //       image: 'PT44',
+  //     },
+  //     {
+  //       title: 'Cuidados',
+  //       message: 'Evite levar as mãos aos olhos e boca.',
+  //       image: 'PT44',
+  //     },
+  //   ],
+  // },
 ]
 
 export default goodPractices
