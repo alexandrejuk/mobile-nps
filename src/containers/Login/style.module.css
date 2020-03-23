@@ -1,7 +1,11 @@
 @import '../../assets/css/colors.css';
 
 .container {
-  background-color: var(--color-cardinal);
+  background: linear-gradient(
+    135deg,
+    var(--color-california) 49%,
+    var(--color-cardinal) 49%
+  );
   min-height: calc(100vh - 40px);
   padding: 20px;
 }

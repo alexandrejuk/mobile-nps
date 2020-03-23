@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import Translate from '../../locales'
 
-import CompanyLogo from '../../assets/images/logo-white.png'
+import CompanyLogo from '../../assets/images/logo.svg'
 import {
   Button,
 } from '../../components'
