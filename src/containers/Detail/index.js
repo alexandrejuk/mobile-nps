@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 import { map, prop } from 'ramda'
 import Lightbox from 'react-image-lightbox'
 import 'react-image-lightbox/style.css'
@@ -79,7 +80,11 @@ const Detail = ({
   )
 
   return (
-    <div className={styles.container}>
+    <div className={
+      classNames(styles.container, {
+        [styles.fixed]: showModal,
+      })
+    }>
       <div
         onClick={goBack}
         role="button"
