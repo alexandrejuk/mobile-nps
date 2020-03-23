@@ -26,6 +26,9 @@ const pt = {
       confirm: 'Sim',
     },
   },
+  equipments: {
+    title: 'Equipamentos',
+  },
   practice: {
     start: 'Iniciar',
     next: 'Próximo',
