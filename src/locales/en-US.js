@@ -20,6 +20,11 @@ const en = {
     title: 'Read more',
     equipmentButton: 'Equipments',
     goodPracticesButton: 'Practices Guide',
+    modal: {
+      title: 'Do you want to exit the application?',
+      cancel: 'No',
+      confirm: 'Yes',
+    },
   },
   practice: {
     start: 'Start',

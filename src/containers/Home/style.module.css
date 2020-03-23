@@ -58,6 +58,16 @@
   margin-right: 10px;
 }
 
+.modalFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.modalFooter > * {
+  width: calc((100% - 20px) / 2);
+}
+
 @media screen and (min-width: 320px) {
   .contentMenu {
     height: 128px;

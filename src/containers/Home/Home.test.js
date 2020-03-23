@@ -10,7 +10,13 @@ describe('Home container', () => {
   it('should render correctly', async () => {
     const callback = jest.fn()
     const { container } = render(
-      <Home goToPage={callback} />
+      <Home
+        closeModal={callback}
+        goToPage={callback}
+        logout={callback}
+        show={false}
+        showModal={callback}
+      />
     )
     expect(container).toMatchSnapshot()
   })

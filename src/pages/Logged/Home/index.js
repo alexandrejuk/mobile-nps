@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { withRouter } from 'react-router'
 import HomeContainer from '../../../containers/Home'
@@ -9,11 +9,27 @@ const Home = ({
   history,
 }) => {
   GAInitialize('/logged/home')
+  const [show, setShow] = useState(false)
 
   const gotToPage = page => history.push(`/logged/${page}`)
 
+  const showModal = () => setShow(true)
+  const closeModal = () => setShow(false)
+
+  const logout = () => {
+    localStorage.clear()
+    history.push('/')
+    closeModal()
+  }
+
   return (
-    <HomeContainer goToPage={gotToPage} />
+    <HomeContainer
+      closeModal={closeModal}
+      goToPage={gotToPage}
+      logout={logout}
+      show={show}
+      showModal={showModal}
+    />
   )
 }
 

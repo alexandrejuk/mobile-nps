@@ -20,6 +20,11 @@ const pt = {
     title: 'Apreenda mais',
     equipmentButton: 'Equipamentos',
     goodPracticesButton: 'Boas Práticas',
+    modal: {
+      title: 'Deseja sair do aplicativo?',
+      cancel: 'Não',
+      confirm: 'Sim',
+    },
   },
   practice: {
     start: 'Iniciar',
