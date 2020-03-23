@@ -3,8 +3,10 @@ import PropTypes from 'prop-types'
 import Translate from '../../locales'
 
 import {
-  Title,
+  Button,
   Card,
+  Confirm,
+  Title,
 } from '../../components/'
 
 import CoffeeSvg from '../../assets/icons/coffee.svg'
@@ -14,12 +16,20 @@ import LoggoutSvg from '../../assets/icons/loggout.svg'
 import styles from './style.module.css'
 
 const Home = ({
+  closeModal,
   goToPage,
+  logout,
+  show,
+  showModal
 }) => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <div className={styles.headerLoggout}>
+        <div
+          className={styles.headerLoggout}
+          onClick={showModal}
+          role="button"
+        >
           <img src={LoggoutSvg} alt="loggout" />
         </div>
         <div className={styles.headerBanner}>
@@ -45,12 +55,40 @@ const Home = ({
           />
         </div>
       </div>
+      <Confirm
+        show={show}
+        close={closeModal}
+      >
+        <Title
+          text={Translate('home.modal.title')}
+          size="medium"
+          textAlign="center"
+        />
+        <div className={styles.modalFooter}>
+          <Button
+            action={logout}
+            color="primary"
+          >
+            {Translate('home.modal.confirm')}
+          </Button>
+          <Button
+            action={closeModal}
+            color="outline"
+          >
+            {Translate('home.modal.cancel')}
+          </Button>
+        </div>
+      </Confirm>
     </div>
   )
 }
 
 Home.propTypes = {
+  closeModal: PropTypes.func.isRequired,
   goToPage: PropTypes.func.isRequired,
+  logout: PropTypes.func.isRequired,
+  show: PropTypes.bool.isRequired,
+  showModal: PropTypes.func.isRequired
 }
 
 export default Home
