@@ -5,6 +5,7 @@ import {
 } from '@testing-library/react'
 
 import Equipments from './'
+import { Banner } from '../../components'
 
 const productsMock = [
   {
@@ -45,7 +46,8 @@ describe('Equipments container', () => {
         practicesAction={callback}
       />
     )
-    const companyLogo = await EquipmentsContainer.findByAltText("company logo")
+
+    const banner = await EquipmentsContainer.findAllByAltText("banner")
     const imageItems = await EquipmentsContainer.findAllByAltText("item card")
     const imagesSrc = imageItems.map(image => image.getAttribute("src"))
 
@@ -59,7 +61,7 @@ describe('Equipments container', () => {
     fireEvent.click(SampleEquipment)
     expect(callback).toHaveBeenCalled()
 
-    expect(companyLogo.getAttribute("src")).toEqual("logo.svg")
+    expect(banner.getAttribute("src")).toEqual("banner-1.svg")
     expect(imagesSrc).toEqual(productsMock.map(() => `m8-60.png`))
     expect(headingItems).toEqual(productsMock.map(({ name }) => name))
     expect(EquipmentsContainer.container).toMatchSnapshot()

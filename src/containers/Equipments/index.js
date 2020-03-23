@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import CompanyLogo from '../../assets/images/logo.svg'
-import { Card } from '../../components'
+import { Card, Banner, Title } from '../../components'
 import styles from './style.module.css'
 import helpSVG from '../../assets/icons/help.svg'
 
 import {
   imagesProduct,
 } from './images'
+import Translate from '../../locales'
 
 const Equipments = ({
   action,
@@ -17,15 +17,18 @@ const Equipments = ({
 }) => {
   return (
     <div className={styles.container}>
+        <Title 
+          type="bold"
+          text={Translate('equipments.title')}
+          textAlign="center"
+        />
+        <Banner fill="primary" />
       <div
         className={styles.tools}
         onClick={practicesAction}
         role="button"
       >
         <img src={helpSVG} alt="tool help" />
-      </div>
-      <div className={styles.logo}>
-        <img src={CompanyLogo} alt="company logo" />
       </div>
       <div className={styles.equipments}>
         {equipments.map(({
