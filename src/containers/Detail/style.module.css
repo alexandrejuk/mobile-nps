@@ -138,3 +138,7 @@
 .headerModalItem {
   width: calc(100% / 3);
 }
+
+.fixed {
+  overflow: hidden;
+}
