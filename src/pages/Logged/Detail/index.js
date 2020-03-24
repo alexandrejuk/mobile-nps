@@ -16,7 +16,7 @@ const Detail = ({
   const goBack = () => history.goBack()
   const { id } = match.params
   const product = EquipmentsMock.find(product => product.id === Number(id))
-  GAInitialize(`/logged/detail/${id}`)
+  GAInitialize(`/logged/equipments/${id}`)
 
   const handleShowModal = issue => {
     setIssue(issue)
