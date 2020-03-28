@@ -13,7 +13,7 @@ const pt = {
       },
       communityCommitment: {
         title: 'Compromisso da Comunidade',
-        content: 'Concordo em tratar todas as pessoas da comunidade com respeito e sem julgamentos ou preconceitos, independentemente de sua raça, religião, nacionalidade, etnia, cor da pele, deficiência, sexo, identidade de gênero, orientação sexual ou idade. Saiba mais.',
+        content: 'Concordo em tratar todas as pessoas da comunidade com respeito e sem julgamentos ou preconceitos, independentemente de sua raça, religião, nacionalidade, etnia, cor da pele, deficiência, sexo, identidade de gênero, orientação sexual ou idade.',
       },
       serviceTerms: {
         title: 'Termos de Serviço',

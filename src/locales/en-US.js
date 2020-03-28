@@ -13,7 +13,7 @@ const en = {
       },
       communityCommitment: {
         title: 'Community Commitment',
-        content: 'I agree to treat all people in the community with respect and without judgment or prejudice, regardless of their race, religion, nationality, ethnicity, skin color, disability, sex, gender identity, sexual orientation or age. Know more.',
+        content: 'I agree to treat all people in the community with respect and without judgment or prejudice, regardless of their race, religion, nationality, ethnicity, skin color, disability, sex, gender identity, sexual orientation or age.',
       },
       serviceTerms: {
         title: 'Service Terms',
