@@ -40,7 +40,93 @@ exports[`Login container should render correctly 1`] = `
             Log in
           </button>
         </div>
+        <div
+          class="terms"
+        >
+          <h1
+            class="primary small left title normal null"
+          >
+            By logging in you agree to the 
+          </h1>
+          <div
+            class="termsUnderscore"
+            role="button"
+          >
+            <h1
+              class="primary small left title bold undercore"
+            >
+              Terms and Conditions.
+            </h1>
+          </div>
+        </div>
       </form>
+    </div>
+    <div
+      class="bgModal"
+    >
+      <div
+        class="modal"
+      >
+        <div
+          class="headerModalLogin"
+        >
+          <div
+            class="headerModalItem"
+            role="button"
+          >
+            <img
+              alt="close modal"
+              src="close.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="contentModalLogin"
+        >
+          <div
+            class="modalTitle"
+          >
+            <h1
+              class="primary large left title normal null"
+            >
+              Terms and Conditions
+            </h1>
+          </div>
+          <h1
+            class="secondary medium left title normal null"
+          >
+            We have a mission to build a reliable community where everyone can feel safe. To ensure this, we are asking you to accept our terms of service and make a commitment to respect everyone.
+          </h1>
+          <div
+            class="modalTitle"
+          >
+            <h1
+              class="primary large left title normal null"
+            >
+              Community Commitment
+            </h1>
+          </div>
+          <h1
+            class="secondary medium left title normal null"
+          >
+            I agree to treat all people in the community with respect and without judgment or prejudice, regardless of their race, religion, nationality, ethnicity, skin color, disability, sex, gender identity, sexual orientation or age. Know more.
+          </h1>
+          <div
+            class="modalTitle"
+          >
+            <h1
+              class="primary large left title normal null"
+            >
+              Service Terms
+            </h1>
+          </div>
+          <h1
+            class="secondary medium left title normal null"
+          >
+            Eu também aceito os Termos de Serviço, a Política de Privacidade e a Política de Não Discriminação.
+          </h1>
+        </div>
+      </div>
     </div>
   </div>
 </div>

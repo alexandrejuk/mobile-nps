@@ -49,7 +49,11 @@
 }
 
 .cardinal {
-  color: var(--color-cardinal)
+  color: var(--color-cardinal);
+}
+
+.white {
+  color: var(--color-white);
 }
 
 .medium-1 {
@@ -58,4 +62,12 @@
 
 .mediumBold {
   font-weight: 500;
+}
+
+.blue {
+  color: rgb(0, 92, 197);
+}
+
+.undercore {
+  text-decoration: underline;
 }

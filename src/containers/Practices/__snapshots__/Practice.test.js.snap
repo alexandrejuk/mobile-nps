@@ -25,7 +25,7 @@ exports[`Practices container should render correctly 1`] = `
       class="content"
     >
       <h1
-        class="primary medium left title bold"
+        class="primary medium left title bold null"
       >
         Read more
       </h1>
@@ -52,12 +52,12 @@ exports[`Practices container should render correctly 1`] = `
               class="content"
             >
               <h1
-                class="primary medium left title bold"
+                class="primary medium left title bold null"
               >
                 Resumo dos Procedimentos para Auditoria TCP
               </h1>
               <h1
-                class="secondary small right title mediumBold"
+                class="secondary small right title mediumBold null"
               >
                 5-6 minutos de leitura
               </h1>

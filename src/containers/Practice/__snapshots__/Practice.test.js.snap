@@ -18,7 +18,7 @@ exports[`Practice container should render correctly 1`] = `
       class="headerPractice"
     >
       <h1
-        class="primary medium center title bold"
+        class="primary medium center title bold null"
       >
         Resumo dos Procedimentos para Auditoria TCP
       </h1>
@@ -57,7 +57,7 @@ exports[`Practice container should render correctly 1`] = `
         />
       </div>
       <h1
-        class="secondary normal center title normal"
+        class="secondary normal center title normal null"
       >
         Material Básico: 5 Copos, 1 Par de luvas, Touca, Jarra, Pincel, Papel toalha, Balança e  Tabela de programação.
       </h1>

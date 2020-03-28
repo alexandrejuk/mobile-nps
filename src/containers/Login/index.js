@@ -3,17 +3,21 @@ import Form from 'react-vanilla-form'
 import PropTypes from 'prop-types'
 
 import Translate from '../../locales'
-
+import CloseSvg from '../../assets/icons/close.svg'
 import CompanyLogo from '../../assets/images/logo.svg'
 import {
   Button,
+  Title,
+  Modal,
 } from '../../components'
 import styles from './style.module.css'
 
 const Login = ({
   data,
   onChange,
+  onShowModal,
   onSubmit,
+  showModal,
 }) => (
   <div className={styles.container}>
     <div className={styles.logo}>
@@ -46,8 +50,72 @@ const Login = ({
             {Translate('login.buttonTitle')}
           </Button>
         </div>
+        <div className={styles.terms}>
+          <Title
+            size="small"
+            text={Translate('login.terms.initialText')}
+          />
+          <div
+            onClick={onShowModal}
+            role="button"
+            className={styles.termsUnderscore}
+          >
+            <Title
+              style="undercore"
+              size="small"
+              type='bold'
+              text={Translate('login.terms.finalText')}
+            />
+          </div>
+        </div>
       </Form>
     </div>
+    <Modal show={showModal}>
+      <div className={styles.headerModalLogin}>
+        <div
+          onClick={onShowModal}
+          role="button"
+          className={styles.headerModalItem}
+        >
+          <img src={CloseSvg} alt="close modal" />
+        </div>
+      </div>
+      <div className={styles.contentModalLogin}>
+        <div className={styles.modalTitle}>
+          <Title
+            size="large"
+            text={Translate('login.modal.terms.title')}
+          />
+        </div>
+        <Title
+          color="secondary"
+          size="medium"
+          text={Translate('login.modal.terms.content')}
+        />
+        <div className={styles.modalTitle}>
+          <Title
+            size="large"
+            text={Translate('login.modal.communityCommitment.title')}
+          />
+        </div>
+        <Title
+          color="secondary"
+          size="medium"
+          text={Translate('login.modal.communityCommitment.content')}
+        />
+        <div className={styles.modalTitle}>
+          <Title
+            size="large"
+            text={Translate('login.modal.serviceTerms.title')}
+          />
+        </div>
+        <Title
+          color="secondary"
+          size="medium"
+          text={Translate('login.modal.serviceTerms.content')}
+        />
+      </div>
+    </Modal>
   </div>
 )
 
@@ -60,7 +128,9 @@ Login.propTypes = {
     ]),
   }).isRequired,
   onChange: PropTypes.func.isRequired,
+  onShowModal: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
+  showModal: PropTypes.bool.isRequired,
 }
 
 export default Login

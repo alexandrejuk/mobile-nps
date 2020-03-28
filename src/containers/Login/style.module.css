@@ -58,3 +58,15 @@
 .input:focus {
   outline: none;
 }
+
+.terms {
+  display: flex;
+}
+
+.termsUnderscore > * {
+  cursor: pointer;
+}
+
+.modalTitle {
+  margin: 20px 0;
+}

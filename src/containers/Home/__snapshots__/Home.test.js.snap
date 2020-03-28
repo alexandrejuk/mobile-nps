@@ -33,7 +33,7 @@ exports[`Home container should render correctly 1`] = `
       class="content"
     >
       <h1
-        class="primary medium left title bold"
+        class="primary medium left title bold null"
       >
         Read more
       </h1>
@@ -57,7 +57,7 @@ exports[`Home container should render correctly 1`] = `
             class="title"
           >
             <h1
-              class="primary medium center title bold"
+              class="primary medium center title bold null"
             >
               Equipments
             </h1>
@@ -80,7 +80,7 @@ exports[`Home container should render correctly 1`] = `
             class="title"
           >
             <h1
-              class="primary medium center title bold"
+              class="primary medium center title bold null"
             >
               Practices Guide
             </h1>
@@ -95,7 +95,7 @@ exports[`Home container should render correctly 1`] = `
         class="confirm"
       >
         <h1
-          class="primary medium center title normal"
+          class="primary medium center title normal null"
         >
           Do you want to exit the application?
         </h1>

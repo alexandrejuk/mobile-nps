@@ -2,6 +2,24 @@ const en = {
   login: {
     accessCode: 'Access code',
     buttonTitle: 'Log in',
+    terms: {
+      initialText: 'By logging in you agree to the ',
+      finalText: 'Terms and Conditions.',
+    },
+    modal: {
+      terms: {
+        title: 'Terms and Conditions',
+        content: 'We have a mission to build a reliable community where everyone can feel safe. To ensure this, we are asking you to accept our terms of service and make a commitment to respect everyone.',
+      },
+      communityCommitment: {
+        title: 'Community Commitment',
+        content: 'I agree to treat all people in the community with respect and without judgment or prejudice, regardless of their race, religion, nationality, ethnicity, skin color, disability, sex, gender identity, sexual orientation or age. Know more.',
+      },
+      serviceTerms: {
+        title: 'Service Terms',
+        content: 'Eu também aceito os Termos de Serviço, a Política de Privacidade e a Política de Não Discriminação.',
+      },
+    },
   },
   detail: {
     dimension: 'Dimension',

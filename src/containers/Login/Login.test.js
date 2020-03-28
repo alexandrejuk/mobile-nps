@@ -15,6 +15,8 @@ describe('Login container', () => {
         data={{ code_access: '' }}
         onChange={callback}
         onSubmit={callback}
+        onShowModal={callback}
+        showModal={false}
       />
     )
 

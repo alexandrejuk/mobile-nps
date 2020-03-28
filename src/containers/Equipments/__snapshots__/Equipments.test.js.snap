@@ -20,7 +20,7 @@ exports[`Equipments container should render correctly 1`] = `
         class="title"
       >
         <h1
-          class="primary medium center title bold"
+          class="primary medium center title bold null"
         >
           Equipments
         </h1>
@@ -61,7 +61,7 @@ exports[`Equipments container should render correctly 1`] = `
             class="title"
           >
             <h1
-              class="primary medium center title bold"
+              class="primary medium center title bold null"
             >
               A8/60
             </h1>
@@ -88,7 +88,7 @@ exports[`Equipments container should render correctly 1`] = `
             class="title"
           >
             <h1
-              class="primary medium center title bold"
+              class="primary medium center title bold null"
             >
               A7/30
             </h1>
@@ -115,7 +115,7 @@ exports[`Equipments container should render correctly 1`] = `
             class="title"
           >
             <h1
-              class="primary medium center title bold"
+              class="primary medium center title bold null"
             >
               A/50
             </h1>
@@ -142,7 +142,7 @@ exports[`Equipments container should render correctly 1`] = `
             class="title"
           >
             <h1
-              class="primary medium center title bold"
+              class="primary medium center title bold null"
             >
               A1/61
             </h1>
@@ -169,7 +169,7 @@ exports[`Equipments container should render correctly 1`] = `
             class="title"
           >
             <h1
-              class="primary medium center title bold"
+              class="primary medium center title bold null"
             >
               A8/6
             </h1>
