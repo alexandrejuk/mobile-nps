@@ -10,7 +10,7 @@ const Title = ({
   text,
   textAlign,
   type,
-  style,
+  styleText,
 }) => (
   <h1
     className={classNames(
@@ -19,7 +19,7 @@ const Title = ({
       styles[textAlign],
       styles.title,
       styles[type],
-      styles[style],
+      styles[styleText],
     )}
   >
     {text}
@@ -52,7 +52,7 @@ Title.propTypes = {
     'normal',
     'mediumBold',
   ]),
-  style: PropTypes.oneOf([
+  styleText: PropTypes.oneOf([
     'undercore',
   ]),
 }
@@ -62,7 +62,7 @@ Title.defaultProps = {
   color: 'primary',
   size: 'medium',
   type: 'normal',
-  style: null,
+  styleText: null,
 }
 
 export default Title

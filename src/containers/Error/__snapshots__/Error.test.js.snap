@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error containers should render correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="content"
+    >
+      <div
+        class="image"
+      >
+        <img
+          alt="error"
+          src="error.svg"
+        />
+      </div>
+      <h1
+        class="primary large center title bold null"
+      >
+        OH NO...
+      </h1>
+      <h1
+        class="secondary medium center title normal null"
+      >
+        Something wierg happened.
+      </h1>
+      <h1
+        class="secondary medium center title normal null"
+      >
+        Keep calm and try again.
+      </h1>
+    </div>
+    <div
+      class="footer"
+    >
+      <button
+        class="button primary null"
+        type="button"
+      >
+        Try again
+      </button>
+    </div>
+  </div>
+</div>
+`;

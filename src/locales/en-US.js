@@ -53,6 +53,7 @@ const en = {
       initialText: 'Something wierg happened.',
       finalText: 'Keep calm and try again.'
     },
+    buttonTitle: 'Try again',
   },
   practice: {
     start: 'Start',

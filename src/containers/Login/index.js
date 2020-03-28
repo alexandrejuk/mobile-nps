@@ -61,7 +61,7 @@ const Login = ({
             className={styles.termsUnderscore}
           >
             <Title
-              style="undercore"
+              styleText="undercore"
               size="small"
               type='bold'
               text={Translate('login.terms.finalText')}

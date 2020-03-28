@@ -1,0 +1,36 @@
+@import '../../assets/css/colors.css';
+
+.container {
+  padding: 20px;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 80vh;
+}
+
+.content {
+  padding-top: 20px;
+  min-height: 320px;
+}
+
+.image {
+  height: 300px;
+  min-width: calc(310px - 40px);
+  overflow: hidden;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.image img {
+  width: auto;
+  height: 100%;
+}
+
+.footer {
+  min-height: 120px;
+}
+
+.footer > * {
+  margin-top: 15px;
+}

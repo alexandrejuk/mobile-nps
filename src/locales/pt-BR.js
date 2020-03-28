@@ -53,6 +53,7 @@ const pt = {
       initialText: 'Lamentamos, mas ocorreu algum error.',
       finalText: 'Por favor tente novamente.'
     },
+    buttonTitle: 'Tente novamente',
   },
   practice: {
     start: 'Iniciar',

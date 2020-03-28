@@ -6,6 +6,7 @@ import {
 
 import Detail from './Detail'
 import Equipments from './Equipments'
+import Error from './Error'
 import Home from './Home'
 import Practice from './Practice'
 import Practices from './Practices'
@@ -17,6 +18,7 @@ const Logged = () => (
     <Route path='/logged/home' component={Home} />
     <Route path='/logged/practices' exact equipmentsequipments component={Practices} />
     <Route path='/logged/practices/:id' exact component={Practice} />
+    <Route path='/logged/error' exact component={Error} />
   </Switch>
 )
 
