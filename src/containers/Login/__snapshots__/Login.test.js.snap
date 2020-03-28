@@ -25,6 +25,7 @@ exports[`Login container should render correctly 1`] = `
         </label>
         <input
           class="input"
+          id="code_access"
           name="code_access"
           type="number"
           value=""
