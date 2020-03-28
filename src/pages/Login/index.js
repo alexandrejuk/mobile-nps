@@ -11,6 +11,8 @@ const Login = ({
 }) => {
   GAInitialize('/login')
   const access = Number(process.env.REACT_APP_ACCESS_CODE)
+
+  const [showModal, setShowModal] = useState(false)
   const [data, setData] = useState({
     code_access: '',
   })
@@ -33,11 +35,15 @@ const Login = ({
     )
   }
 
+  const handleShowModal = () => setShowModal(!showModal)
+
   return (
     <LoginContainer
       data={data}
       onChange={handleChange}
+      onShowModal={handleShowModal}
       onSubmit={handleSubmit}
+      showModal={showModal}
     />
   )
 }

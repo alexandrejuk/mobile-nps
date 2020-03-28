@@ -22,17 +22,17 @@ exports[`Detail container should render correctly 1`] = `
       />
     </div>
     <h1
-      class="primary large left title bold"
+      class="primary large left title bold null"
     >
       A6/30
     </h1>
     <h1
-      class="primary medium left title bold"
+      class="primary medium left title bold null"
     >
       Description
     </h1>
     <h1
-      class="secondary normal left title normal"
+      class="secondary normal left title normal null"
     >
       Maquina de café premium, criada com o mais alto padrão de qualidade, lider de venda em mais de 2.000 mil países.
     </h1>
@@ -47,7 +47,7 @@ exports[`Detail container should render correctly 1`] = `
           src="scale-width.svg"
         />
         <h1
-          class="cardinal small center title bold"
+          class="cardinal small center title bold null"
         >
           W 330
         </h1>
@@ -60,7 +60,7 @@ exports[`Detail container should render correctly 1`] = `
           src="scale-height.svg"
         />
         <h1
-          class="cardinal small center title bold"
+          class="cardinal small center title bold null"
         >
           H 100
         </h1>
@@ -73,7 +73,7 @@ exports[`Detail container should render correctly 1`] = `
           src="scale-deep.svg"
         />
         <h1
-          class="cardinal small center title bold"
+          class="cardinal small center title bold null"
         >
           D 2400
         </h1>
@@ -86,7 +86,7 @@ exports[`Detail container should render correctly 1`] = `
           src="volts.svg"
         />
         <h1
-          class="cardinal small center title bold"
+          class="cardinal small center title bold null"
         >
           220v~ | 1600w
         </h1>
@@ -99,7 +99,7 @@ exports[`Detail container should render correctly 1`] = `
           src="weight.svg"
         />
         <h1
-          class="cardinal small center title bold"
+          class="cardinal small center title bold null"
         >
           1.2
         </h1>
@@ -109,7 +109,7 @@ exports[`Detail container should render correctly 1`] = `
       class="revenuesTitle"
     >
       <h1
-        class="primary medium left title bold"
+        class="primary medium left title bold null"
       >
         Revenues
       </h1>
@@ -132,7 +132,7 @@ exports[`Detail container should render correctly 1`] = `
       class="issuesTitle"
     >
       <h1
-        class="primary medium left title bold"
+        class="primary medium left title bold null"
       >
         Errors
       </h1>
@@ -173,7 +173,7 @@ exports[`Detail container should render correctly 1`] = `
             class="headerModalItem"
           >
             <h1
-              class="primary medium-1 center title normal"
+              class="primary medium-1 center title normal null"
             />
           </div>
         </div>
@@ -187,7 +187,7 @@ exports[`Detail container should render correctly 1`] = `
               class="issueModalTitle"
             >
               <h1
-                class="primary large left title normal"
+                class="primary large left title normal null"
               >
                 Description of Problem
               </h1>
@@ -200,7 +200,7 @@ exports[`Detail container should render correctly 1`] = `
               class="issueModalTitle"
             >
               <h1
-                class="primary large left title normal"
+                class="primary large left title normal null"
               >
                 Solution
               </h1>

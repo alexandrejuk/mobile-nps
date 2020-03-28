@@ -3,7 +3,7 @@
 exports[`Title component should render correctly 1`] = `
 <div>
   <h1
-    class="primary medium left title normal"
+    class="primary medium left title normal null"
   >
     I am a title text
   </h1>
@@ -13,7 +13,7 @@ exports[`Title component should render correctly 1`] = `
 exports[`Title component should render correctly with bold type 1`] = `
 <div>
   <h1
-    class="primary medium left title bold"
+    class="primary medium left title bold null"
   >
     I am a title text large
   </h1>
@@ -23,7 +23,7 @@ exports[`Title component should render correctly with bold type 1`] = `
 exports[`Title component should render correctly with large size 1`] = `
 <div>
   <h1
-    class="primary large left title normal"
+    class="primary large left title normal null"
   >
     I am a title text large
   </h1>
@@ -33,7 +33,7 @@ exports[`Title component should render correctly with large size 1`] = `
 exports[`Title component should render correctly with large size and center text aligin 1`] = `
 <div>
   <h1
-    class="primary large center title normal"
+    class="primary large center title normal null"
   >
     I am a title text large and center
   </h1>
@@ -43,7 +43,7 @@ exports[`Title component should render correctly with large size and center text
 exports[`Title component should render correctly with small size 1`] = `
 <div>
   <h1
-    class="primary small left title normal"
+    class="primary small left title normal null"
   >
     I am a title text small
   </h1>
@@ -53,7 +53,7 @@ exports[`Title component should render correctly with small size 1`] = `
 exports[`Title component should render correctly with small size and right text aligin 1`] = `
 <div>
   <h1
-    class="primary small right title normal"
+    class="primary small right title normal null"
   >
     I am a title text small right align
   </h1>
