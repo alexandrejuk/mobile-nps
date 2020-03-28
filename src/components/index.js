@@ -7,6 +7,7 @@ import Confirm from './Confirm'
 import Modal from './Modal'
 import PracticeCard from './PracticeCard'
 import Progress from './Progress'
+import Skeleton from './Skeleton'
 import Title from './Title'
 
 export {
@@ -19,5 +20,6 @@ export {
   Modal,
   PracticeCard,
   Progress,
+  Skeleton,
   Title,
 }
