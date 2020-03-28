@@ -16,15 +16,14 @@ const Practice = ({
   history,
   match,
 }) => {
+  GAInitialize('/logged/practice-detail')
 
   const { id } = match.params
   const { practices } = goodPractices.find(practice => practice.id === Number(id))
   const [step, setStep] = useState(0)
   const [progress, setProgress] = useState(
     progressValue(practices.length, step, 'increment')
-    )
-
-  GAInitialize(`/logged/practices/${id}`)
+  )
 
   const handleNext = () => {
     const incrementProgress = progressValue(practices.length, step, 'increment')
