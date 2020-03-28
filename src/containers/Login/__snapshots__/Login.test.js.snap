@@ -109,7 +109,7 @@ exports[`Login container should render correctly 1`] = `
           <h1
             class="secondary medium left title normal null"
           >
-            I agree to treat all people in the community with respect and without judgment or prejudice, regardless of their race, religion, nationality, ethnicity, skin color, disability, sex, gender identity, sexual orientation or age. Know more.
+            I agree to treat all people in the community with respect and without judgment or prejudice, regardless of their race, religion, nationality, ethnicity, skin color, disability, sex, gender identity, sexual orientation or age.
           </h1>
           <div
             class="modalTitle"
