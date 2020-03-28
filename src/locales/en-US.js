@@ -47,6 +47,13 @@ const en = {
   equipments: {
     title:'Equipments',
   },
+  error: {
+    title: 'OH NO...',
+    message: {
+      initialText: 'Something wierg happened.',
+      finalText: 'Keep calm and try again.'
+    },
+  },
   practice: {
     start: 'Start',
     next: 'Next',

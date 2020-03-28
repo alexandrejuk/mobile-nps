@@ -47,6 +47,13 @@ const pt = {
   equipments: {
     title: 'Equipamentos',
   },
+  error: {
+    title: 'AH NÃO...',
+    message: {
+      initialText: 'Lamentamos, mas ocorreu algum error.',
+      finalText: 'Por favor tente novamente.'
+    },
+  },
   practice: {
     start: 'Iniciar',
     next: 'Próximo',
