@@ -17,7 +17,7 @@ const pt = {
       },
       serviceTerms: {
         title: 'Termos de Serviço',
-        content: 'I also accept the Terms of Service, the Privacy Policy and the Non-Discrimination Policy.',
+        content: 'Eu também aceito os Termos de Serviço, a Política de Privacidade e a Política de Não Discriminação.',
       },
     },
   },
