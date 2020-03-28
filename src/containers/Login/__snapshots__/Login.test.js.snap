@@ -123,7 +123,7 @@ exports[`Login container should render correctly 1`] = `
           <h1
             class="secondary medium left title normal null"
           >
-            Eu também aceito os Termos de Serviço, a Política de Privacidade e a Política de Não Discriminação.
+            I also accept the Terms of Service, the Privacy Policy and the Non-Discrimination Policy.
           </h1>
         </div>
       </div>
