@@ -15,7 +15,7 @@ const Logged = () => (
     <Route path='/logged/equipments' exact component={Equipments} />
     <Route path='/logged/equipments/:id' exact component={Detail} />
     <Route path='/logged/home' component={Home} />
-    <Route path='/logged/practices' equipmentsequipments component={Practices} />
+    <Route path='/logged/practices' exact equipmentsequipments component={Practices} />
     <Route path='/logged/practices/:id' exact component={Practice} />
   </Switch>
 )
