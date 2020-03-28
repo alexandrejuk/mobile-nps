@@ -10,7 +10,7 @@ const Equipments = ({
   history,
 }) => {
   GAInitialize('/logged/equipments')
-  const goToDetail = id => history.push(`/logged/equipments/${id}`)
+  const goToDetail = id => history.push(`/logged/detail/${id}`)
 
   return (
     <EquipmentsContainer

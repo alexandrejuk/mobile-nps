@@ -10,7 +10,7 @@ import GAInitialize from '../../../utils/ga'
 const Practices = ({
   history,
 }) => {
-  GAInitialize('/logged/practices')
+  GAInitialize('/logged/practice')
 
   const goToPractice = id => history.push(`/logged/practices/${id}`)
 
